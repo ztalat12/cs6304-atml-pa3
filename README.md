@@ -12,7 +12,8 @@ steps, settings, decisions and attribution.
 ```
 common/          helpers shared by all tasks (checks, seeding, I/O, LoRA / OPLoRA, model loading)
 task1/ … task3/  each task's code and README
-notebooks/       Kaggle notebooks
+notebooks/       Kaggle notebooks (clean templates to rerun)
+kaggle_runs/     the final Kaggle runs exactly as downloaded, outputs included (see kaggle_runs/README.md)
 tests/           offline CPU tests (tiny random Qwen3 / SigLIP, synthetic data)
 results/taskN/   machine-readable results: the notebooks' original output files (unchanged) plus tables rebuilt from them
 requirements.txt environment specification
