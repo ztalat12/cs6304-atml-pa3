@@ -1,0 +1,16 @@
+{
+  "rollouts with a defined correlation": 25572,
+  "per-question median correlation: median across questions": -0.2157354239025348,
+  "per-question median correlation: 25th-75th percentile": [
+    -0.3165726645926217,
+    -0.09397669075829411
+  ],
+  "questions whose median correlation is positive (%)": 10.625,
+  "rollouts with positive correlation (%)": 14.715313624276552,
+  "mean correlation, correct vs incorrect rollouts": [
+    -0.20220818571142748,
+    -0.22049682076005417
+  ],
+  "tokenwise Z - Z = Cov(c, v): mean": -0.0022514017628335473,
+  "tokenwise Z - Z: share positive (%)": 14.715313624276552
+}

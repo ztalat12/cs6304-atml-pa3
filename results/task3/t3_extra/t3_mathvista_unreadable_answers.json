@@ -1,0 +1,82 @@
+{
+  "rollouts": 32000,
+  "null or empty extraction": 3032,
+  "null extraction by question type": {
+    "multi_choice": 2087,
+    "free_form": 945
+  },
+  "null extraction among capped rollouts": 475,
+  "extracted but unreadable by the official rules": 1889,
+  "unreadable, by answer type": {
+    "integer": 1381,
+    "float": 508
+  },
+  "unreadable but math-verify-equal to gold": 226,
+  "questions with such a rollout": 37,
+  "most common unreadable answers": {
+    "10-15 years": 101,
+    "10-20 years": 91,
+    "5-10 years": 68,
+    "10-15": 52,
+    "5-10": 44,
+    "20-30 years": 42,
+    "100\\%": 36,
+    "10-20": 30,
+    "51.045\\%": 28,
+    "10^8": 25,
+    "30-40 years": 23,
+    "20-30": 21
+  },
+  "examples equal to gold": [
+    {
+      "sample_id": "104",
+      "extracted_answer": "\\frac{4}{5}",
+      "gold_answer": "0.8"
+    },
+    {
+      "sample_id": "169",
+      "extracted_answer": "5\\%",
+      "gold_answer": "5"
+    },
+    {
+      "sample_id": "19",
+      "extracted_answer": "400 \\text{ mL}",
+      "gold_answer": "400"
+    },
+    {
+      "sample_id": "19",
+      "extracted_answer": "400\\text{ml}",
+      "gold_answer": "400"
+    },
+    {
+      "sample_id": "19",
+      "extracted_answer": "400 \\text{ ml}",
+      "gold_answer": "400"
+    },
+    {
+      "sample_id": "2",
+      "extracted_answer": "1000 \\text{ ml}",
+      "gold_answer": "1000"
+    },
+    {
+      "sample_id": "216",
+      "extracted_answer": "90\\%",
+      "gold_answer": "90"
+    },
+    {
+      "sample_id": "282",
+      "extracted_answer": "100\\%",
+      "gold_answer": "100"
+    },
+    {
+      "sample_id": "282",
+      "extracted_answer": "\\left( \\frac{r^2}{R^2} \\right) \\times 100",
+      "gold_answer": "100"
+    },
+    {
+      "sample_id": "304",
+      "extracted_answer": "100^\\circ",
+      "gold_answer": "100"
+    }
+  ]
+}

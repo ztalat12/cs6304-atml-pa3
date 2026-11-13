@@ -1,0 +1,9 @@
+{
+  "condition": "full_mid",
+  "run_dir": "/kaggle/input/notebooks/zylah628/task1-oplora-run2/t1_runs/full",
+  "source": "/kaggle/input/notebooks/zylah628/task1-oplora-run2/t1_runs/full/export_mid",
+  "build_seconds": 86.80764407599963,
+  "qual_seconds": 223.65619713399974,
+  "peak_allocated_gb": 7.375481856,
+  "peak_reserved_gb": 8.715763712
+}

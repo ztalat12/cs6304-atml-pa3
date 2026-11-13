@@ -1,0 +1,19 @@
+{
+  "quality_score": "self-certainty",
+  "agreement": {
+    "tau": 0.625,
+    "gamma": null,
+    "dev_accuracy": 0.8260000000000001,
+    "dev_mean_cost": 7088.955499999999,
+    "dev_fixed32_accuracy": 0.825,
+    "dev_fixed32_cost": 18322.4
+  },
+  "quality": {
+    "tau": 0.5,
+    "gamma": 0.0,
+    "dev_accuracy": 0.8215,
+    "dev_mean_cost": 5479.528499999999,
+    "dev_fixed32_accuracy": 0.825,
+    "dev_fixed32_cost": 18322.4
+  }
+}

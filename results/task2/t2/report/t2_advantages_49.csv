@@ -1,0 +1,23 @@
+Suite,Quantity,Unit,Estimate,CI low,CI high,Excludes 0
+Annotation-derived,acc_correct_minus_complementary,pp,56.25,43.75,68.75,True
+Annotation-derived,nll_complementary_minus_correct,nats,2.653076162961952,2.145858762525813,3.1423461916140245,True
+Annotation-derived,acc_correct_minus_mismatched,pp,32.8125,24.21875,41.40625,True
+Annotation-derived,nll_mismatched_minus_correct,nats,1.579376408833923,1.3006390703273383,1.8577391359691091,True
+Annotation-derived,acc_correct_minus_no_image,pp,31.25,23.4375,39.0625,True
+Annotation-derived,nll_no_image_minus_correct,nats,0.4513282689222251,0.25176075154840877,0.6427541288053362,True
+Annotation-derived,acc_correct_minus_complementary|counting,pp,31.25,15.625,48.4375,True
+Annotation-derived,nll_complementary_minus_correct|counting,nats,1.8271484220167622,1.118896483363642,2.5403259227947275,True
+Annotation-derived,acc_correct_minus_complementary|presence,pp,81.25,68.75,93.75,True
+Annotation-derived,nll_complementary_minus_correct|presence,nats,3.4790039039071416,2.8845031868940167,4.028088371318518,True
+Natural VQAv2,acc_correct_minus_complementary,pp,21.197916666666668,10.988281250000002,31.093750000000004,True
+Natural VQAv2,nll_complementary_minus_correct,nats,1.1328557283741247,0.7314179340451422,1.5732916407730955,True
+Natural VQAv2,acc_correct_minus_mismatched,pp,15.729166666666666,8.541666666666666,22.760416666666668,True
+Natural VQAv2,nll_mismatched_minus_correct,nats,1.2042101603328774,0.7469783405177927,1.704227711270414,True
+Natural VQAv2,acc_correct_minus_no_image,pp,15.312500000000002,8.697916666666666,21.614583333333336,True
+Natural VQAv2,nll_no_image_minus_correct,nats,0.6430161384135621,0.30880549532057555,0.9755207034088018,True
+Natural VQAv2,acc_correct_minus_complementary|number,pp,4.583333333333333,-14.791666666666666,24.79687500000002,False
+Natural VQAv2,nll_complementary_minus_correct|number,nats,1.2333773540206796,0.15723097861494656,2.4580739173833233,True
+Natural VQAv2,acc_correct_minus_complementary|other,pp,25.83333333333333,10.694444444444445,40.97222222222222,True
+Natural VQAv2,nll_complementary_minus_correct|other,nats,1.6815529428939853,0.9539371922288815,2.5433768711654317,True
+Natural VQAv2,acc_correct_minus_complementary|yes/no,pp,27.638888888888886,9.444444444444446,45.41666666666667,True
+Natural VQAv2,nll_complementary_minus_correct|yes/no,nats,0.5171440967565609,0.23977321691345427,0.8109917520635969,True

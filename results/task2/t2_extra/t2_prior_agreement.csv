@@ -1,0 +1,8 @@
+Suite,Type,Questions,Correct-image answer = no-image answer (%),Reference 'yes' (%),"Predicted 'yes', correct image (%)","Predicted 'yes', no image (%)",Most common no-image answers
+Annotation-derived,all,128,42.1875,,,,
+Annotation-derived,presence,64,57.8125,50.0,51.5625,12.5,"'no' x56, 'yes' x8"
+Annotation-derived,counting,64,26.5625,,,,"'1' x54, 'tennis' x2, '3' x2"
+Natural VQAv2,all,192,36.97916666666667,,,,
+Natural VQAv2,yes/no,72,52.77777777777778,50.0,50.0,50.0,"'yes' x36, 'no' x32, 'loner' x2"
+Natural VQAv2,number,48,43.75,,,,"'1' x32, '2' x12, '3' x2"
+Natural VQAv2,other,72,16.666666666666664,,,,"'green' x10, 'red' x8, 'male' x4"

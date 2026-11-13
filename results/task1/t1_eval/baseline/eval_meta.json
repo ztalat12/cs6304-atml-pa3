@@ -1,0 +1,8 @@
+{
+  "condition": "baseline",
+  "source": "Qwen/Qwen3-0.6B",
+  "build_seconds": 14.75786432000001,
+  "qual_seconds": 111.51641307599994,
+  "peak_allocated_gb": 7.375481856,
+  "peak_reserved_gb": 8.717860864
+}

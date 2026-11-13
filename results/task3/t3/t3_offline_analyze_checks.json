@@ -1,0 +1,44 @@
+[
+  {
+    "status": "PASS",
+    "name": "mathvista: at N = 1 every rule returns the only candidate",
+    "expected": "True",
+    "actual": "True"
+  },
+  {
+    "status": "PASS",
+    "name": "mathvista: no rule is ever correct without a correct candidate (accuracy <= coverage)",
+    "expected": "True",
+    "actual": "True"
+  },
+  {
+    "status": "PASS",
+    "name": "mathvista: oracle coverage never decreases along a nested order",
+    "expected": "True",
+    "actual": "True"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "mathvista: held-out oracle coverage by N (%)",
+    "expected": null,
+    "actual": "{1: 53.6, 2: 66.0, 4: 75.9, 8: 82.7, 16: 87.1, 32: 89.5}"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "mathvista: confidence-vision correlation within rollouts",
+    "expected": null,
+    "actual": "{'rollouts with a defined correlation': 25572, 'per-question median correlation: median across questions': -0.2157354239025348, 'per-question median correlation: 25th-75th percentile': [-0.3165726645926217, -0.09397669075829411], 'questions whose median correlation is positive (%)': 10.625, 'rollouts with positive correlation (%)': 14.715313624276552, 'mean correlation, correct vs incorrect rollouts': [-0.20220818571142748, -0.22049682076005417], 'tokenwise Z - Z = Cov(c, v): mean': -0.0022514017628335473, 'tokenwise Z - Z: share positive (%)': 14.715313624276552}"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "mathvista: stopping settings chosen on development (frozen before held-out)",
+    "expected": null,
+    "actual": "{'agreement': {'tau': 0.5, 'gamma': None, 'dev_accuracy': 0.636, 'dev_mean_cost': 3807.4829999999997, 'dev_fixed32_accuracy': 0.6425, 'dev_fixed32_cost': 9217.485}, 'quality': {'tau': 0.5, 'gamma': 0.0, 'dev_accuracy': 0.6395000000000001, 'dev_mean_cost': 4199.0595, 'dev_fixed32_accuracy': 0.6425, 'dev_fixed32_cost': 9217.485}}"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "mathvista: analysis time",
+    "expected": null,
+    "actual": "138 s"
+  }
+]

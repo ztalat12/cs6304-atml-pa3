@@ -1,0 +1,91 @@
+{
+  "condition": "baseline",
+  "source": "Qwen/Qwen3-0.6B",
+  "build_seconds": 14.75786432000001,
+  "gsm8k_seconds": 1810.7320022970002,
+  "gsm8k_batch_size": 32,
+  "gsm8k_flexible_em": 0.4336618650492798,
+  "gsm8k_flexible_em_stderr": 0.013650728047064692,
+  "gsm8k_strict_em": 0.0,
+  "gsm8k_strict_em_stderr": 0.0,
+  "lm_eval_config": {
+    "gsm8k": {
+      "num_fewshot": 0,
+      "generation_kwargs": {
+        "do_sample": false,
+        "until": [
+          "Q:",
+          "</s>",
+          "<|im_end|>"
+        ],
+        "max_gen_toks": 1024
+      },
+      "filter_list": [
+        {
+          "filter": [
+            {
+              "function": "regex",
+              "regex_pattern": "The answer is (\\-?[0-9\\.\\,]+)."
+            },
+            {
+              "function": "take_first"
+            }
+          ],
+          "name": "strict-match"
+        },
+        {
+          "filter": [
+            {
+              "function": "regex",
+              "group_select": -1,
+              "regex_pattern": "(-?[$0-9.,]{2,})|(-?[0-9]+)"
+            },
+            {
+              "function": "take_first"
+            }
+          ],
+          "name": "flexible-extract"
+        }
+      ]
+    }
+  },
+  "gsm8k_n": 1319,
+  "gsm8k_tracked_generations": 1319,
+  "gsm8k_truncation_rate": 0.008339651250947688,
+  "gsm8k_unextractable_rate": 0.0,
+  "gsm8k_mean_gen_tokens": 226.00151630022745,
+  "gsm8k_stop_reasons": {
+    "end_of_turn": 1308,
+    "stop_string": 0,
+    "token_cap": 11,
+    "unknown": 0
+  },
+  "gsm8k_correct_given_not_truncated": 0.43730886850152906,
+  "first_gsm8k_prompt": "<|im_start|>user\nQ: Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?\nA:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+  "mc_seconds": 662.743299968,
+  "mc_batch_size": 8,
+  "hellaswag_acc": 0.37562238597888864,
+  "hellaswag_acc_stderr": 0.0048329345291214295,
+  "hellaswag_acc_norm": 0.47321250746863175,
+  "hellaswag_acc_norm_stderr": 0.004982615233056769,
+  "boolq_acc": 0.6437308868501529,
+  "boolq_acc_stderr": 0.008375944670158064,
+  "arc_easy_acc": 0.609006734006734,
+  "arc_easy_acc_stderr": 0.010012992232540683,
+  "arc_easy_acc_norm": 0.5606060606060606,
+  "arc_easy_acc_norm_stderr": 0.010184134315437384,
+  "versions": {
+    "gsm8k_cot": 3.0,
+    "arc_easy": 1.0,
+    "boolq": 2.0,
+    "hellaswag": 1.0
+  },
+  "n_examples": {
+    "gsm8k": 1319,
+    "hellaswag": 10042,
+    "boolq": 3270,
+    "arc_easy": 2376
+  },
+  "peak_allocated_gb": 7.375481856,
+  "peak_reserved_gb": 8.711569408
+}

@@ -1,0 +1,6 @@
+Item,Seconds,Peak GPU (GB),Trainable params,Notes
+"SigLIP feature caching (once, shared by both runs)",220.9602128260001,1.465531392,0,"9276 images, 2.79 GB FP16"
+Stage 1: caption_alignment,1167.8415674280043,1.583082496,1837056,"connector 1,837,056 + LoRA 0; development evaluation 23 s (not included)"
+Stage 2: visual_instruction,1107.484316791013,1.606874112,6424576,"connector 1,837,056 + LoRA 4,587,520; development evaluation 17 s (not included)"
+Stage 3: natural_vqa,549.6376626320057,1.522720768,6424576,"connector 1,837,056 + LoRA 4,587,520; development evaluation 9 s (not included)"
+"Final-test generation (greedy, ≤16 tokens, batch 8)",0.01969360009635205,1.368336896,0,seconds per answer

@@ -1,0 +1,10 @@
+{
+  "wrong -> correct": 1,
+  "correct -> wrong": 0,
+  "correct -> correct": 32,
+  "wrong -> wrong": 17,
+  "revision changed the answer group": 5,
+  "initial response truncated": 6,
+  "revision truncated": 2,
+  "mean revision prompt tokens": 750.76
+}

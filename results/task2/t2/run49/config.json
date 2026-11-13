@@ -1,0 +1,96 @@
+{
+  "stages": [
+    {
+      "name": "caption_alignment",
+      "updates": 2250,
+      "lr_conn": 0.001,
+      "lr_lora": null,
+      "mix": null
+    },
+    {
+      "name": "visual_instruction",
+      "updates": 1500,
+      "lr_conn": 0.0001,
+      "lr_lora": 2e-05,
+      "mix": [
+        [
+          "presence",
+          0.5
+        ],
+        [
+          "counting",
+          0.25
+        ],
+        [
+          "caption",
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "natural_vqa",
+      "updates": 750,
+      "lr_conn": 5e-05,
+      "lr_lora": 1e-05,
+      "mix": [
+        [
+          "vqa",
+          0.7
+        ],
+        [
+          "presence",
+          0.1
+        ],
+        [
+          "counting",
+          0.1
+        ],
+        [
+          "caption",
+          0.1
+        ]
+      ]
+    }
+  ],
+  "micro": 8,
+  "accum": 2,
+  "weight_decay": 0.01,
+  "clip": 1.0,
+  "warmup_frac": 0.05,
+  "final_lr_frac": 0.1,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "lora_targets": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj"
+  ],
+  "ckpt_every": 250,
+  "dev_every": 500,
+  "seed": 6304,
+  "grounding_sampling": "category_balanced",
+  "optimizer": "fresh AdamW (betas 0.9/0.999, eps 1e-8) at the start of each stage",
+  "tokens": 49,
+  "lm": "Qwen/Qwen3-0.6B",
+  "env": {
+    "torch": "2.11.0+cu128",
+    "cuda_available": true,
+    "gpus": [
+      "Tesla T4"
+    ],
+    "gpu_total_gb": [
+      15.636037632
+    ],
+    "transformers": "5.16.1",
+    "datasets": "4.8.5",
+    "lm-eval": null,
+    "tokenizers": "0.23.1",
+    "numpy": "2.1.3",
+    "pandas": "2.3.3",
+    "safetensors": "0.8.0"
+  },
+  "rendered_prompt_template": "<|im_start|>user\nIMGMARK\nQQQ<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+  "placeholder_token_id": 151655
+}

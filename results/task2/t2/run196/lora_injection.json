@@ -1,0 +1,8 @@
+{
+  "n_modules": 112,
+  "n_adapter_params": 4587520,
+  "init_A_sha256": "7853833bfd9e69fc1eb004e9b5bad01cf1216eee839ebc51eb30697117ba183d",
+  "basis_bytes": 0,
+  "svd_seconds": 0.0,
+  "basis_method": null
+}

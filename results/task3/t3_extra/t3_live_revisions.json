@@ -1,0 +1,61 @@
+{
+  "questions": 50,
+  "revision changed the answer": 5,
+  "of which the initial response had been cut off at 1,024 tokens": 4,
+  "initial responses cut off": 6,
+  "completed initial responses whose answer the revision changed": 1,
+  "completed initial responses": 44,
+  "changed cases": [
+    {
+      "sample_id": "test:3504",
+      "gold": "216",
+      "initial_answer": NaN,
+      "initial_correct": false,
+      "revised_answer": "2520",
+      "revised_correct": false,
+      "initial_truncated": true
+    },
+    {
+      "sample_id": "test:4549",
+      "gold": "11",
+      "initial_answer": NaN,
+      "initial_correct": false,
+      "revised_answer": "2 + 1 + 2 = 5",
+      "revised_correct": false,
+      "initial_truncated": true
+    },
+    {
+      "sample_id": "test:3285",
+      "gold": "0",
+      "initial_answer": NaN,
+      "initial_correct": false,
+      "revised_answer": "414994 - 2^{63}",
+      "revised_correct": false,
+      "initial_truncated": true
+    },
+    {
+      "sample_id": "test:2948",
+      "gold": "1+\\sqrt 2,\\ 1-\\sqrt 2,\\ 2+\\sqrt 3,\\ 2-\\sqrt 3",
+      "initial_answer": "2 + \\sqrt{3}, 2 - \\sqrt{3}",
+      "initial_correct": false,
+      "revised_answer": "1 + i, 1 - i",
+      "revised_correct": false,
+      "initial_truncated": false
+    },
+    {
+      "sample_id": "test:2177",
+      "gold": "18",
+      "initial_answer": NaN,
+      "initial_correct": false,
+      "revised_answer": "18",
+      "revised_correct": true,
+      "initial_truncated": true
+    }
+  ],
+  "parallel: questions with >= 1 call cut off": 14,
+  "parallel: final vote NO_ANSWER": 8,
+  "single right, parallel right": 29,
+  "single right, parallel wrong": 3,
+  "single wrong, parallel right": 5,
+  "single wrong, parallel wrong": 13
+}

@@ -1,0 +1,5 @@
+comparison,diff_pp,ci_low_pp,ci_high_pp
+parallel - single,4.0,-6.0,16.0
+revised - single,2.0,-8.0,14.000000000000002
+revised - parallel,-2.0,-10.0,4.0
+revised - initial,2.0,0.0,6.0

@@ -1,0 +1,4 @@
+strategy,accuracy,questions,mean input tokens,mean output tokens,unused output allowance (tokens),total runtime (min),mean runtime per question (s),truncated calls (%),calls without an extracted answer (%),final answer missing (%),peak GPU memory (GB)
+"single longer response (3,072)",0.64,50,108.38,642.26,2429.74,26.06363513286665,31.276362159439984,0.0,0.0,0.0,6.53176832
+"parallel x3 (1,024) + self-consistency",0.68,50,325.14,1843.1,1228.9,74.3004928334833,89.16059140017997,18.0,16.0,16.0,6.376092672
+"initial (1,024) + critique-and-revision (2,048)",0.66,50,859.14,1207.68,1864.32,49.798401277650015,59.75808153318002,8.0,8.0,4.0,6.629830656

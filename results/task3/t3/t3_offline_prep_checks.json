@@ -1,0 +1,170 @@
+[
+  {
+    "status": "PASS",
+    "name": "math: supplied folder found (qwen25-math/)",
+    "expected": "qwen25-math",
+    "actual": "/kaggle/input/datasets/zylah628/atml-pa3-data/ATML-PA3-Data/qwen25-math"
+  },
+  {
+    "status": "PASS",
+    "name": "math: 32,000 rollouts in every file",
+    "expected": "32000",
+    "actual": "(32000, 32000)"
+  },
+  {
+    "status": "PASS",
+    "name": "math: every rollout joins across files on ['dataset', 'sample_id', 'rollout_id']",
+    "expected": "True",
+    "actual": "(True, None)"
+  },
+  {
+    "status": "PASS",
+    "name": "math: 1,000 questions x rollout IDs 0..31",
+    "expected": "1000 x 32",
+    "actual": "1000 questions, counts [32]"
+  },
+  {
+    "status": "PASS",
+    "name": "math: token lists aligned (token IDs = logp = kl_u_p = n_generated_text_tokens)",
+    "expected": "all 32,000",
+    "actual": "32,000 aligned"
+  },
+  {
+    "status": "PASS",
+    "name": "math: totals match the supplied README",
+    "expected": "{'retained_tokens': 20742094, 'capped': 523, 'null_extracted': 521}",
+    "actual": "{'retained_tokens': 20742094, 'capped': 523, 'null_extracted': 521}"
+  },
+  {
+    "status": "PASS",
+    "name": "math: split = 200 development + 800 held-out questions, disjoint",
+    "expected": "(200, 800)",
+    "actual": "(200, 800)"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "math: first five development / held-out IDs (sorted, then default_rng(6304) permutation)",
+    "expected": null,
+    "actual": "(['test:4388', 'test:1139', 'test:3909', 'test:2897', 'test:3752'], ['test:943', 'test:2688', 'test:3504', 'test:4335', 'test:2460'])"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "math: the 50 live-generation questions (first 50 held-out)",
+    "expected": null,
+    "actual": "['test:943', 'test:2688', 'test:3504', 'test:4335', 'test:2460', 'test:1324', 'test:2340', 'test:1577', 'test:639', 'test:2892', '...']"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "math: answer extraction / grading",
+    "expected": null,
+    "actual": "{'rollouts correct (%)': np.float64(66.32), 'NO_ANSWER (%)': np.float64(1.63), 'questions with >= 1 correct rollout (%)': np.float64(91.9), 'mean distinct answer groups per question (32 rollouts)': np.float64(5.65), 'most_similar_fallback': 0, 'normalisation_failed': 0, 'gold_changed_by_normalisation': 0}"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "math: preparation time",
+    "expected": null,
+    "actual": "831 s"
+  },
+  {
+    "status": "PASS",
+    "name": "mathvista: supplied folder found (qwen25vl-mathvista/)",
+    "expected": "qwen25vl-mathvista",
+    "actual": "/kaggle/input/datasets/zylah628/atml-pa3-data/ATML-PA3-Data/qwen25vl-mathvista"
+  },
+  {
+    "status": "PASS",
+    "name": "mathvista: 32,000 rollouts in every file",
+    "expected": "32000",
+    "actual": "(32000, 32000, 32000)"
+  },
+  {
+    "status": "PASS",
+    "name": "mathvista: every rollout joins across files on ['dataset', 'sample_id', 'rollout_id']",
+    "expected": "True",
+    "actual": "(True, True)"
+  },
+  {
+    "status": "PASS",
+    "name": "mathvista: 1,000 questions x rollout IDs 0..31",
+    "expected": "1000 x 32",
+    "actual": "1000 questions, counts [32]"
+  },
+  {
+    "status": "PASS",
+    "name": "mathvista: token lists aligned (token IDs = logp = kl_u_p = n_generated_text_tokens)",
+    "expected": "all 32,000",
+    "actual": "32,000 aligned"
+  },
+  {
+    "status": "PASS",
+    "name": "mathvista: attention lists aligned with the token lists",
+    "expected": "True",
+    "actual": "True"
+  },
+  {
+    "status": "PASS",
+    "name": "mathvista: attention n_generated_text_tokens lists are 0..T-1 (preceding-token counts)",
+    "expected": "True",
+    "actual": "True"
+  },
+  {
+    "status": "PASS",
+    "name": "mathvista: first prediction has zero generated-text attention",
+    "expected": "0",
+    "actual": "0.0"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "mathvista: attention mass summed over the three groups (need not be 1)",
+    "expected": null,
+    "actual": "{'mean': 0.6794, 'min': 0.4442, 'max': 0.8129}"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "mathvista: tokens with zero total attention (v undefined, counted as 0 in V\u1d62)",
+    "expected": null,
+    "actual": "0"
+  },
+  {
+    "status": "PASS",
+    "name": "mathvista: totals match the supplied README",
+    "expected": "{'retained_tokens': 8961703, 'capped': 487, 'null_extracted': 3032}",
+    "actual": "{'retained_tokens': 8961703, 'capped': 487, 'null_extracted': 3032}"
+  },
+  {
+    "status": "PASS",
+    "name": "mathvista: every question has released metadata (question/answer type, choices, precision)",
+    "expected": "0",
+    "actual": "0 missing, e.g. []"
+  },
+  {
+    "status": "PASS",
+    "name": "mathvista: split = 200 development + 800 held-out questions, disjoint",
+    "expected": "(200, 800)",
+    "actual": "(200, 800)"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "mathvista: first five development / held-out IDs (sorted, then default_rng(6304) permutation)",
+    "expected": null,
+    "actual": "(['782', '119', '680', '469', '65'], ['99', '425', '601', '77', '379'])"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "mathvista: answer extraction / grading",
+    "expected": null,
+    "actual": "{'rollouts correct (%)': np.float64(53.64), 'NO_ANSWER (%)': np.float64(15.38), 'questions with >= 1 correct rollout (%)': np.float64(89.4), 'mean distinct answer groups per question (32 rollouts)': np.float64(3.99), 'most_similar_fallback': 93, 'normalisation_failed': 1889, 'gold_changed_by_normalisation': 0}"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "mathvista: preparation time",
+    "expected": null,
+    "actual": "82 s"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "scorer (fixed before evaluation)",
+    "expected": null,
+    "actual": "{'math-verify': '0.9.0', 'mathvista_rules': 'MathVista evaluation/calculate_score.py normalize_extracted_answer, ported (task3/t3_data.py); multiple choice as option letters', 'no_answer': 'NO_ANSWER', 'mathvista_metadata': {'repo': 'AI4Math/MathVista', 'revision': '2b6ad69445fbb5695c9b165475e8decdbeb97747', 'files': ['testmini-00000-of-00001-725687bf7a18d64b.parquet']}}"
+  }
+]

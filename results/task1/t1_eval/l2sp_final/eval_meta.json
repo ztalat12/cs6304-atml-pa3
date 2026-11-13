@@ -1,0 +1,9 @@
+{
+  "condition": "l2sp_final",
+  "run_dir": "/kaggle/input/notebooks/zylah628/task1-oplora-run2/t1_runs/l2sp",
+  "source": "/kaggle/input/notebooks/zylah628/task1-oplora-run2/t1_runs/l2sp/export_final",
+  "build_seconds": 97.29260702900046,
+  "qual_seconds": 158.29846210100004,
+  "peak_allocated_gb": 7.375481856,
+  "peak_reserved_gb": 8.715763712
+}

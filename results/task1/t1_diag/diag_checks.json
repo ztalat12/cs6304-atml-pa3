@@ -1,0 +1,68 @@
+[
+  {
+    "status": "OBSERVE",
+    "name": "down_proj shape (dout x din)",
+    "expected": null,
+    "actual": "(1024, 3072)"
+  },
+  {
+    "status": "PASS",
+    "name": "layer 0: OPLoRA's training bases span the same subspace as the diagnostic bases",
+    "expected": "relative projector difference < 1e-3",
+    "actual": "8.83e-04"
+  },
+  {
+    "status": "PASS",
+    "name": "layer 13: OPLoRA's training bases span the same subspace as the diagnostic bases",
+    "expected": "relative projector difference < 1e-3",
+    "actual": "5.69e-04"
+  },
+  {
+    "status": "PASS",
+    "name": "layer 27: OPLoRA's training bases span the same subspace as the diagnostic bases",
+    "expected": "relative projector difference < 1e-3",
+    "actual": "6.98e-04"
+  },
+  {
+    "status": "PASS",
+    "name": "OPLoRA layer 0: rho_k ~ 0 (numerical check of the constraint)",
+    "expected": "< 1e-6",
+    "actual": "3.09e-08"
+  },
+  {
+    "status": "PASS",
+    "name": "OPLoRA layer 13: rho_k ~ 0 (numerical check of the constraint)",
+    "expected": "< 1e-6",
+    "actual": "3.41e-08"
+  },
+  {
+    "status": "PASS",
+    "name": "OPLoRA layer 27: rho_k ~ 0 (numerical check of the constraint)",
+    "expected": "< 1e-6",
+    "actual": "1.73e-08"
+  },
+  {
+    "status": "FAIL",
+    "name": "OPLoRA layer 0: top-128 singular triples preserved, (W0+dW) v_i = sigma_i u_i",
+    "expected": "relative error < 1e-4",
+    "actual": "1.17e-04"
+  },
+  {
+    "status": "FAIL",
+    "name": "OPLoRA layer 13: top-128 singular triples preserved, (W0+dW) v_i = sigma_i u_i",
+    "expected": "relative error < 1e-4",
+    "actual": "1.08e-04"
+  },
+  {
+    "status": "PASS",
+    "name": "OPLoRA layer 27: top-128 singular triples preserved, (W0+dW) v_i = sigma_i u_i",
+    "expected": "relative error < 1e-4",
+    "actual": "9.42e-05"
+  },
+  {
+    "status": "PASS",
+    "name": "cached 64 probe inputs per layer (32 math + 32 non-math)",
+    "expected": "(64, 3072)",
+    "actual": "(64, 3072)"
+  }
+]

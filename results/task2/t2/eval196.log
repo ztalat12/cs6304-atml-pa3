@@ -1,0 +1,32 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<04:22,  1.18it/s]Loading weights:  62%|██████▏   | 192/311 [00:00<00:00, 275.71it/s]Loading weights:  97%|█████████▋| 303/311 [00:01<00:00, 294.08it/s]Loading weights: 100%|██████████| 311/311 [00:01<00:00, 239.18it/s]
+grounding_test  correct       acc 0.648 | pair 0.500 | identical 0.141 | follows-partner 0.125 | changed 0.000 | NLL 0.820 | empty 0.000
+grounding_test  complementary acc 0.125 | pair 0.047 | identical 0.141 | follows-partner 0.648 | changed 0.859 | NLL 3.833 | empty 0.000
+grounding_test  mismatched    acc 0.289 | pair 0.016 | identical 0.750 | follows-partner 0.336 | changed 0.641 | NLL 2.888 | empty 0.000
+grounding_test  no_image      acc 0.352 | pair 0.000 | identical 1.000 | follows-partner 0.352 | changed 0.578 | NLL 1.528 | empty 0.000
+   acc_correct_minus_complementary                  +0.523  [+0.383, +0.664]
+   nll_complementary_minus_correct                  +3.013  [+2.455, +3.560]
+   acc_correct_minus_mismatched                     +0.359  [+0.273, +0.445]
+   nll_mismatched_minus_correct                     +2.068  [+1.722, +2.414]
+   acc_correct_minus_no_image                       +0.297  [+0.211, +0.391]
+   nll_no_image_minus_correct                       +0.708  [+0.489, +0.910]
+   acc_correct_minus_complementary|counting         +0.266  [+0.078, +0.453]
+   nll_complementary_minus_correct|counting         +2.036  [+1.315, +2.722]
+   acc_correct_minus_complementary|presence         +0.781  [+0.594, +0.938]
+   nll_complementary_minus_correct|presence         +3.990  [+3.307, +4.614]
+vqa_test        correct       acc 0.576 | pair 0.281 | identical 0.458 | follows-partner 0.203 | changed 0.000 | NLL 1.610 | empty 0.000
+vqa_test        complementary acc 0.244 | pair 0.000 | identical 0.458 | follows-partner 0.542 | changed 0.542 | NLL 3.038 | empty 0.000
+vqa_test        mismatched    acc 0.304 | pair 0.031 | identical 0.708 | follows-partner 0.323 | changed 0.620 | NLL 2.967 | empty 0.000
+vqa_test        no_image      acc 0.308 | pair 0.000 | identical 1.000 | follows-partner 0.281 | changed 0.630 | NLL 2.392 | empty 0.000
+   acc_correct_minus_complementary                  +0.332  [+0.247, +0.419]
+   nll_complementary_minus_correct                  +1.428  [+0.978, +1.925]
+   acc_correct_minus_mismatched                     +0.272  [+0.201, +0.345]
+   nll_mismatched_minus_correct                     +1.358  [+0.935, +1.839]
+   acc_correct_minus_no_image                       +0.268  [+0.204, +0.333]
+   nll_no_image_minus_correct                       +0.783  [+0.470, +1.106]
+   acc_correct_minus_complementary|number           +0.200  [+0.062, +0.360]
+   nll_complementary_minus_correct|number           +1.379  [+0.318, +2.570]
+   acc_correct_minus_complementary|other            +0.385  [+0.250, +0.524]
+   nll_complementary_minus_correct|other            +2.286  [+1.381, +3.243]
+   acc_correct_minus_complementary|yes/no           +0.368  [+0.218, +0.518]
+   nll_complementary_minus_correct|yes/no           +0.604  [+0.293, +0.944]

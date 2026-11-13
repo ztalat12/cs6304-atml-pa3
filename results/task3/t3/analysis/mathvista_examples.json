@@ -1,0 +1,124 @@
+{
+  "selection_disagreement": [
+    {
+      "sample_id": "552",
+      "gold": "4",
+      "votes_top5": {
+        "4": 14,
+        "3": 9,
+        "2": 9
+      },
+      "SC": {
+        "rollout": 28,
+        "answer": "4",
+        "correct": true
+      },
+      "VisConf+RWC": {
+        "rollout": 2,
+        "answer": "2",
+        "correct": false
+      },
+      "fraction_correct_in_pool": 0.4375
+    },
+    {
+      "sample_id": "643",
+      "gold": "A",
+      "votes_top5": {
+        "C": 11,
+        "A": 10,
+        "NO_ANSWER": 8,
+        "D": 3
+      },
+      "SC": {
+        "rollout": 29,
+        "answer": "C",
+        "correct": false
+      },
+      "VisConf+RWC": {
+        "rollout": 26,
+        "answer": "A",
+        "correct": true
+      },
+      "fraction_correct_in_pool": 0.3125
+    },
+    {
+      "sample_id": "542",
+      "gold": "2",
+      "votes_top5": {
+        "2": 12,
+        "3": 11,
+        "5": 3,
+        "1": 2,
+        "6": 1
+      },
+      "SC": {
+        "rollout": 26,
+        "answer": "2",
+        "correct": true
+      },
+      "VisConf+RWC": {
+        "rollout": 6,
+        "answer": "3",
+        "correct": false
+      },
+      "fraction_correct_in_pool": 0.375
+    }
+  ],
+  "premature_stop": [
+    {
+      "sample_id": "705",
+      "gold": "B",
+      "stopped_at": 8,
+      "answer_at_stop": "A",
+      "share_at_stop": 0.5,
+      "rwc_margin": 0.3928571428571428,
+      "answers_seen": [
+        "A",
+        "B",
+        "B",
+        "A",
+        "A",
+        "A",
+        "B",
+        "NO_ANSWER"
+      ],
+      "fixed32_answer": "A",
+      "fixed32_correct": false,
+      "fraction_correct_in_pool": 0.1875
+    },
+    {
+      "sample_id": "310",
+      "gold": "C",
+      "stopped_at": 4,
+      "answer_at_stop": "A",
+      "share_at_stop": 0.75,
+      "rwc_margin": 0.3333333333333333,
+      "answers_seen": [
+        "NO_ANSWER",
+        "A",
+        "A",
+        "A"
+      ],
+      "fixed32_answer": "A",
+      "fixed32_correct": false,
+      "fraction_correct_in_pool": 0.0
+    },
+    {
+      "sample_id": "434",
+      "gold": "A",
+      "stopped_at": 4,
+      "answer_at_stop": "C",
+      "share_at_stop": 0.5,
+      "rwc_margin": 0.3333333333333333,
+      "answers_seen": [
+        "NO_ANSWER",
+        "C",
+        "A",
+        "C"
+      ],
+      "fixed32_answer": "A",
+      "fixed32_correct": true,
+      "fraction_correct_in_pool": 0.53125
+    }
+  ]
+}

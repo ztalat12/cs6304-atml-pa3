@@ -1,0 +1,12 @@
+{
+  "math-verify": "0.9.0",
+  "mathvista_rules": "MathVista evaluation/calculate_score.py normalize_extracted_answer, ported (task3/t3_data.py); multiple choice as option letters",
+  "no_answer": "NO_ANSWER",
+  "mathvista_metadata": {
+    "repo": "AI4Math/MathVista",
+    "revision": "2b6ad69445fbb5695c9b165475e8decdbeb97747",
+    "files": [
+      "testmini-00000-of-00001-725687bf7a18d64b.parquet"
+    ]
+  }
+}

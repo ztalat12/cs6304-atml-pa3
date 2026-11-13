@@ -1,0 +1,92 @@
+{
+  "condition": "full_final",
+  "run_dir": "/kaggle/input/notebooks/zylah628/task1-oplora-run2/t1_runs/full",
+  "source": "/kaggle/input/notebooks/zylah628/task1-oplora-run2/t1_runs/full/export_final",
+  "build_seconds": 88.2699007479996,
+  "gsm8k_seconds": 1306.4023747250003,
+  "gsm8k_batch_size": 32,
+  "gsm8k_flexible_em": 0.6504927975739196,
+  "gsm8k_flexible_em_stderr": 0.013133836511705991,
+  "gsm8k_strict_em": 0.0,
+  "gsm8k_strict_em_stderr": 0.0,
+  "lm_eval_config": {
+    "gsm8k": {
+      "num_fewshot": 0,
+      "generation_kwargs": {
+        "do_sample": false,
+        "until": [
+          "Q:",
+          "</s>",
+          "<|im_end|>"
+        ],
+        "max_gen_toks": 1024
+      },
+      "filter_list": [
+        {
+          "filter": [
+            {
+              "function": "regex",
+              "regex_pattern": "The answer is (\\-?[0-9\\.\\,]+)."
+            },
+            {
+              "function": "take_first"
+            }
+          ],
+          "name": "strict-match"
+        },
+        {
+          "filter": [
+            {
+              "function": "regex",
+              "group_select": -1,
+              "regex_pattern": "(-?[$0-9.,]{2,})|(-?[0-9]+)"
+            },
+            {
+              "function": "take_first"
+            }
+          ],
+          "name": "flexible-extract"
+        }
+      ]
+    }
+  },
+  "gsm8k_n": 1319,
+  "gsm8k_tracked_generations": 1319,
+  "gsm8k_truncation_rate": 0.006823351023502654,
+  "gsm8k_unextractable_rate": 0.0,
+  "gsm8k_mean_gen_tokens": 138.59135708870357,
+  "gsm8k_stop_reasons": {
+    "end_of_turn": 1310,
+    "stop_string": 0,
+    "token_cap": 9,
+    "unknown": 0
+  },
+  "gsm8k_correct_given_not_truncated": 0.6549618320610687,
+  "first_gsm8k_prompt": "<|im_start|>user\nQ: Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?\nA:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+  "mc_seconds": 673.1706995699997,
+  "mc_batch_size": 8,
+  "hellaswag_acc": 0.37293367855008963,
+  "hellaswag_acc_stderr": 0.004825963768771898,
+  "hellaswag_acc_norm": 0.4614618601872137,
+  "hellaswag_acc_norm_stderr": 0.004974937803907778,
+  "boolq_acc": 0.6214067278287462,
+  "boolq_acc_stderr": 0.00848334171802464,
+  "arc_easy_acc": 0.6717171717171717,
+  "arc_easy_acc_stderr": 0.009635749509262078,
+  "arc_easy_acc_norm": 0.6443602693602694,
+  "arc_easy_acc_norm_stderr": 0.009822854395535267,
+  "versions": {
+    "gsm8k_cot": 3.0,
+    "arc_easy": 1.0,
+    "boolq": 2.0,
+    "hellaswag": 1.0
+  },
+  "n_examples": {
+    "gsm8k": 1319,
+    "hellaswag": 10042,
+    "boolq": 3270,
+    "arc_easy": 2376
+  },
+  "peak_allocated_gb": 7.375481856,
+  "peak_reserved_gb": 8.709472256
+}

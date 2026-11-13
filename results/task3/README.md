@@ -1,0 +1,1 @@
+`t3/`: the original files from `t3_offline_results.zip` and `t3_live_results.zip` (unchanged).  `t3_report_rebuilt/` and `t3_extra/`: computed from them by `task3/t3_report.py` and `task3/t3_extra.py`.

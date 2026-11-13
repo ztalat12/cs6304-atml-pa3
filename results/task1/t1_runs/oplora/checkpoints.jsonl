@@ -1,0 +1,4 @@
+{"update": 312, "examples_seen": 9984, "recovery_bytes": 121587101, "skipped_so_far": 0, "train_seconds_so_far": 3049.2481955269977, "peak_allocated_gb": 3.821868032, "peak_reserved_gb": 6.85768704, "adapter_bytes": 40496315}
+{"update": 625, "examples_seen": 20000, "recovery_bytes": 121587101, "skipped_so_far": 0, "train_seconds_so_far": 6084.281396523994, "peak_allocated_gb": 3.821868032, "peak_reserved_gb": 6.859784192, "adapter_bytes": 40496315}
+{"update": 937, "examples_seen": 29984, "recovery_bytes": 121587101, "skipped_so_far": 0, "train_seconds_so_far": 9094.871216669, "peak_allocated_gb": 3.821868032, "peak_reserved_gb": 6.859784192, "adapter_bytes": 40496315}
+{"update": 1250, "examples_seen": 40000, "recovery_bytes": 121587101, "skipped_so_far": 0, "train_seconds_so_far": 12106.27602399203, "peak_allocated_gb": 3.821868032, "peak_reserved_gb": 6.859784192, "adapter_bytes": 40496315}

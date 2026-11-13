@@ -1,0 +1,74 @@
+[
+  {
+    "status": "PASS",
+    "name": "finished OPLoRA run with its exported projected factors",
+    "expected": "t1_runs/oplora/adapter_final_projected.pt",
+    "actual": "/kaggle/input/notebooks/zylah628/task1-oplora-run2/t1_runs/oplora"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "OPLoRA run being checked",
+    "expected": "\u03b1 / r = 2, k = 128; bases: exact FP32 SVD, then a one-time FP64 QR re-orthonormalisation of Uk and Vk (column signs kept), stored in FP32",
+    "actual": "/kaggle/input/notebooks/zylah628/task1-oplora-run2/t1_runs/oplora"
+  },
+  {
+    "status": "PASS",
+    "name": "the FP64 reference is exact: W\u2080V\u2096 = U\u2096\u03a3\u2096 on all 196 matrices",
+    "expected": "< 1e-10",
+    "actual": "2.5e-15"
+  },
+  {
+    "status": "PASS",
+    "name": "redo of the diagnostics check, layer 0 down_proj: top-128 singular triples preserved (FP64 reference)",
+    "expected": "(W\u2080 + \u0394W) v\u1d62 = \u03c3\u1d62 u\u1d62 and u\u1d62\u1d40 (W\u2080 + \u0394W) = \u03c3\u1d62 v\u1d62\u1d40, relative error < 0.0001",
+    "actual": "3.82e-06 (right side), 4.86e-06 (left side)"
+  },
+  {
+    "status": "PASS",
+    "name": "redo of the diagnostics check, layer 13 down_proj: top-128 singular triples preserved (FP64 reference)",
+    "expected": "(W\u2080 + \u0394W) v\u1d62 = \u03c3\u1d62 u\u1d62 and u\u1d62\u1d40 (W\u2080 + \u0394W) = \u03c3\u1d62 v\u1d62\u1d40, relative error < 0.0001",
+    "actual": "1.69e-06 (right side), 5.04e-06 (left side)"
+  },
+  {
+    "status": "PASS",
+    "name": "redo of the diagnostics check, layer 27 down_proj: top-128 singular triples preserved (FP64 reference)",
+    "expected": "(W\u2080 + \u0394W) v\u1d62 = \u03c3\u1d62 u\u1d62 and u\u1d62\u1d40 (W\u2080 + \u0394W) = \u03c3\u1d62 v\u1d62\u1d40, relative error < 0.0001",
+    "actual": "1.37e-06 (right side), 2.47e-06 (left side)"
+  },
+  {
+    "status": "PASS",
+    "name": "all 196 OPLoRA matrices: top-128 singular triples preserved (FP64 reference)",
+    "expected": "< 0.0001",
+    "actual": "worst right side 3.02e-05 (model.layers.17.mlp.gate_proj), worst left side 3.17e-05 (model.layers.8.mlp.down_proj)"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "median error over all matrices (right side / left side)",
+    "expected": null,
+    "actual": "3.2e-06 / 2.8e-06"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "smallest relative gap between \u03c3\u2096 and \u03c3\u2096\u208a\u2081",
+    "expected": "a tiny gap makes the protected subspace sensitive to rounding in the FP32 training bases",
+    "actual": "1.0e-04 (model.layers.3.mlp.gate_proj)"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "layer 0: original FP32 check replayed on cuda, and its two parts",
+    "expected": "original run: 1.17e-04 (FAIL)",
+    "actual": "total 1.17e-04; reference alone 1.17e-04; update alone 3.41e-06"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "layer 13: original FP32 check replayed on cuda, and its two parts",
+    "expected": "original run: 1.08e-04 (FAIL)",
+    "actual": "total 1.08e-04; reference alone 1.08e-04; update alone 1.92e-06"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "layer 27: original FP32 check replayed on cuda, and its two parts",
+    "expected": "original run: 9.42e-05 (PASS)",
+    "actual": "total 9.42e-05; reference alone 9.42e-05; update alone 1.38e-06"
+  }
+]

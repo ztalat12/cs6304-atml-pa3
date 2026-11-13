@@ -1,0 +1,50 @@
+{
+  "n_updates": 1250,
+  "micro": 2,
+  "accum": 16,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "eps": 1e-08,
+  "weight_decay": 0.01,
+  "warmup": 38,
+  "clip": 1.0,
+  "max_len": 2048,
+  "lora_dropout": 0.05,
+  "seed": 6304,
+  "ckpt_updates": [
+    312,
+    625,
+    937,
+    1250
+  ],
+  "loss_chunk": 1024,
+  "schedule": "transformers.get_cosine_schedule_with_warmup (linear 0 -> peak over 38 updates, cosine -> 0 at 1250)",
+  "kind": "lora",
+  "lr": 0.0002,
+  "r": 4,
+  "alpha": 8,
+  "k": 0,
+  "method": "lora4",
+  "model": "Qwen/Qwen3-0.6B",
+  "env": {
+    "torch": "2.11.0+cu128",
+    "cuda_available": true,
+    "gpus": [
+      "Tesla T4"
+    ],
+    "gpu_total_gb": [
+      15.636037632
+    ],
+    "transformers": "5.16.1",
+    "datasets": "4.8.5",
+    "lm-eval": null,
+    "tokenizers": "0.23.1",
+    "numpy": "2.1.3",
+    "pandas": "2.3.3",
+    "safetensors": "0.8.0"
+  },
+  "ref_storage_requested": "auto",
+  "ref_storage_used": null
+}

@@ -1,0 +1,8 @@
+{
+  "tokens": 196,
+  "global_updates": 4500,
+  "examples_presented": 72000,
+  "wall_seconds_this_session": 6062.669343609,
+  "train_seconds": 5951.837819265973,
+  "dev_eval_seconds": 105.36245559899999
+}

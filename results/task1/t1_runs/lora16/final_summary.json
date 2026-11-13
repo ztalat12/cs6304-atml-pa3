@@ -1,0 +1,18 @@
+{
+  "method": "lora16",
+  "trainable_params": 10092544,
+  "total_params": 606142464,
+  "train_seconds_measured": 9297.727813340021,
+  "wall_seconds_this_session": 9299.407747962998,
+  "skipped_updates": 0,
+  "updates": 1250,
+  "peak_allocated_gb": 3.495281664,
+  "peak_reserved_gb": 6.482296832,
+  "overhead": {
+    "adapter_injection_seconds": 0.12707967599999392,
+    "model_load_seconds": 3.062667167001564,
+    "export_seconds": 0.07122260799951619
+  },
+  "recovery_checkpoint_bytes": 121587101,
+  "adapter_bytes_fp32": 40496315
+}

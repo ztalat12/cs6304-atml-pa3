@@ -1,0 +1,15 @@
+{
+  "condition": "oplora_final",
+  "run_dir": "/kaggle/input/notebooks/zylah628/task1-oplora-run2/t1_runs/oplora",
+  "merge_check": {
+    "max_abs_logit_diff": 0.11328125,
+    "mean_abs_logit_diff": 0.006293232552707195,
+    "argmax_agreement": 1.0,
+    "n_positions": 421
+  },
+  "source": "/kaggle/input/notebooks/zylah628/task1-oplora-run2/t1_runs/oplora/adapter_final_projected.pt merged into fresh Qwen/Qwen3-0.6B",
+  "build_seconds": 7.492940702999476,
+  "qual_seconds": 213.04864657600046,
+  "peak_allocated_gb": 7.375481856,
+  "peak_reserved_gb": 8.780775424
+}

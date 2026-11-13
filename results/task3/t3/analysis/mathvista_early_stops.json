@@ -1,0 +1,114 @@
+{
+  "agreement": {
+    "order-question cases": 8000,
+    "early stops": 6473,
+    "incorrect early stops": 1735,
+    "incorrect early stops that fixed-32 would have answered correctly": 312,
+    "by_fraction_correct_in_pool": [
+      {
+        "bin": "0",
+        "cases": 840,
+        "early_stop_pct": 32.261904761904766,
+        "mean_stop": 23.176190476190477,
+        "accuracy": 0.0,
+        "fixed32_accuracy": 0.0
+      },
+      {
+        "bin": "(0, .25]",
+        "cases": 1560,
+        "early_stop_pct": 58.269230769230774,
+        "mean_stop": 16.102564102564102,
+        "accuracy": 0.07628205128205129,
+        "fixed32_accuracy": 0.017948717948717947
+      },
+      {
+        "bin": "(.25, .5]",
+        "cases": 1360,
+        "early_stop_pct": 79.55882352941175,
+        "mean_stop": 10.782352941176471,
+        "accuracy": 0.49411764705882355,
+        "fixed32_accuracy": 0.48970588235294116
+      },
+      {
+        "bin": "(.5, .75]",
+        "cases": 1320,
+        "early_stop_pct": 97.8030303030303,
+        "mean_stop": 5.927272727272728,
+        "accuracy": 0.9022727272727272,
+        "fixed32_accuracy": 1.0
+      },
+      {
+        "bin": "(.75, 1)",
+        "cases": 2100,
+        "early_stop_pct": 100.0,
+        "mean_stop": 4.177142857142857,
+        "accuracy": 0.9995238095238095,
+        "fixed32_accuracy": 1.0
+      },
+      {
+        "bin": "1",
+        "cases": 820,
+        "early_stop_pct": 100.0,
+        "mean_stop": 4.0,
+        "accuracy": 1.0,
+        "fixed32_accuracy": 1.0
+      }
+    ]
+  },
+  "quality": {
+    "order-question cases": 8000,
+    "early stops": 6228,
+    "incorrect early stops": 1547,
+    "incorrect early stops that fixed-32 would have answered correctly": 252,
+    "by_fraction_correct_in_pool": [
+      {
+        "bin": "0",
+        "cases": 840,
+        "early_stop_pct": 29.761904761904763,
+        "mean_stop": 23.919047619047618,
+        "accuracy": 0.0,
+        "fixed32_accuracy": 0.0
+      },
+      {
+        "bin": "(0, .25]",
+        "cases": 1560,
+        "early_stop_pct": 52.243589743589745,
+        "mean_stop": 18.01025641025641,
+        "accuracy": 0.0641025641025641,
+        "fixed32_accuracy": 0.017948717948717947
+      },
+      {
+        "bin": "(.25, .5]",
+        "cases": 1360,
+        "early_stop_pct": 72.35294117647058,
+        "mean_stop": 13.005882352941176,
+        "accuracy": 0.5044117647058823,
+        "fixed32_accuracy": 0.48970588235294116
+      },
+      {
+        "bin": "(.5, .75]",
+        "cases": 1320,
+        "early_stop_pct": 95.45454545454545,
+        "mean_stop": 7.0,
+        "accuracy": 0.9242424242424242,
+        "fixed32_accuracy": 1.0
+      },
+      {
+        "bin": "(.75, 1)",
+        "cases": 2100,
+        "early_stop_pct": 99.95238095238095,
+        "mean_stop": 4.306666666666667,
+        "accuracy": 0.9995238095238095,
+        "fixed32_accuracy": 1.0
+      },
+      {
+        "bin": "1",
+        "cases": 820,
+        "early_stop_pct": 100.0,
+        "mean_stop": 4.0,
+        "accuracy": 1.0,
+        "fixed32_accuracy": 1.0
+      }
+    ]
+  }
+}

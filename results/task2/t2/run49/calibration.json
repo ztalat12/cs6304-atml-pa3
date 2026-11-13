@@ -1,0 +1,9 @@
+{
+  "rule": "s = mean ||text embedding|| / mean ||connector(F)|| at initialisation, training data only",
+  "text_norm_mean": 0.8714470267295837,
+  "text_norm_std": 0.07953161001205444,
+  "n_text_tokens": 21026,
+  "visual_norm_mean_before": 11.453193664550781,
+  "n_visual_tokens": 25088,
+  "scale": 0.07608769088983536
+}

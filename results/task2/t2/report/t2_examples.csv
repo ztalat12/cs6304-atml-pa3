@@ -1,0 +1,41 @@
+suite,type,kind,pair,slot,image,question,reference,pred_correct_image,pred_partner_image,pred_mismatched_image,pred_no_image
+Annotation-derived,counting,image-sensitive,32,0,val2014/452060,How many tennis rackets can you see?,1,1,2,1,tennis
+Annotation-derived,counting,image-sensitive,32,1,val2014/53949,How many tennis rackets can you see?,2,2,1,1,tennis
+Annotation-derived,counting,image-sensitive,33,0,val2014/437351,How many suitcases can you see?,3,3,1,1,3
+Annotation-derived,counting,image-sensitive,33,1,val2014/306467,How many suitcases can you see?,2,1,3,1,3
+Annotation-derived,counting,image-insensitive,49,0,val2014/455610,How many motorcycles can you see?,2,2,2,1,1
+Annotation-derived,counting,image-insensitive,49,1,val2014/263700,How many motorcycles can you see?,3,2,2,1,1
+Annotation-derived,counting,image-insensitive,56,0,val2014/397636,How many dining tables can you see?,1,2,2,2,1
+Annotation-derived,counting,image-insensitive,56,1,val2014/190306,How many dining tables can you see?,4,2,2,1,1
+Annotation-derived,presence,image-sensitive,0,0,val2014/31566,Does this image contain an oven?,yes,yes,no,no,no
+Annotation-derived,presence,image-sensitive,0,1,val2014/248051,Does this image contain an oven?,no,no,yes,no,no
+Annotation-derived,presence,image-sensitive,1,0,val2014/204640,Does this image contain a bear?,yes,yes,no,no,no
+Annotation-derived,presence,image-sensitive,1,1,val2014/361885,Does this image contain a bear?,no,no,yes,no,no
+Annotation-derived,presence,image-insensitive,2,0,val2014/316879,Does this image contain a backpack?,yes,yes,yes,no,yes
+Annotation-derived,presence,image-insensitive,2,1,val2014/166747,Does this image contain a backpack?,no,yes,yes,no,yes
+Annotation-derived,presence,image-insensitive,7,0,val2014/125286,Does this image contain a traffic light?,yes,no,no,no,no
+Annotation-derived,presence,image-insensitive,7,1,val2014/222635,Does this image contain a traffic light?,no,no,no,no,no
+Natural VQAv2,number,image-sensitive,36,0,val2014/212507,How many busses?,3,3,2,1,2
+Natural VQAv2,number,image-sensitive,36,1,val2014/50124,How many busses?,1,2,3,1,2
+Natural VQAv2,number,image-sensitive,38,0,val2014/466838,How many women in the photo?,2,2,1,0,1
+Natural VQAv2,number,image-sensitive,38,1,val2014/420110,How many women in the photo?,0,1,2,0,1
+Natural VQAv2,number,image-insensitive,37,0,val2014/455422,How many hot dogs are there?,1,2,2,0,1
+Natural VQAv2,number,image-insensitive,37,1,val2014/323460,How many hot dogs are there?,2,2,2,0,1
+Natural VQAv2,number,image-insensitive,40,0,val2014/457691,How many clock faces does the tower likely have?,4,2,2,4,2
+Natural VQAv2,number,image-insensitive,40,1,val2014/112517,How many clock faces does the tower likely have?,1,2,2,1,2
+Natural VQAv2,other,image-sensitive,61,0,val2014/183306,Which airline does the plane belong to?,united,airplane,airline,airline,Airline
+Natural VQAv2,other,image-sensitive,61,1,val2014/524186,Which airline does the plane belong to?,azul,airline,airplane,lufa,Airline
+Natural VQAv2,other,image-sensitive,62,0,val2014/136117,What type of furniture are the objects in the picture sitting on?,bed,bed,chair,carriage,chairs
+Natural VQAv2,other,image-sensitive,62,1,val2014/204256,What type of furniture are the objects in the picture sitting on?,couch,chair,bed,chair,chairs
+Natural VQAv2,other,image-insensitive,60,0,val2014/571012,What color is the rear wall?,blue,white,white,white,green
+Natural VQAv2,other,image-insensitive,60,1,val2014/116046,What color is the rear wall?,white,white,white,white,green
+Natural VQAv2,other,image-insensitive,63,0,val2014/234766,What color is the sky?,blue,blue,blue,blue,blue
+Natural VQAv2,other,image-insensitive,63,1,val2014/167082,What color is the sky?,black,blue,blue,blue,blue
+Natural VQAv2,yes/no,image-sensitive,2,0,val2014/212074,Is the toilet open?,yes,yes,no,no,no
+Natural VQAv2,yes/no,image-sensitive,2,1,val2014/298452,Is the toilet open?,no,no,yes,no,no
+Natural VQAv2,yes/no,image-sensitive,4,0,val2014/405195,Is this a bakery?,yes,yes,no,no,no
+Natural VQAv2,yes/no,image-sensitive,4,1,val2014/376307,Is this a bakery?,no,no,yes,no,no
+Natural VQAv2,yes/no,image-insensitive,0,0,val2014/406395,Are the cat's eyes open?,yes,yes,yes,no,yes
+Natural VQAv2,yes/no,image-insensitive,0,1,val2014/422424,Are the cat's eyes open?,no,yes,yes,yes,yes
+Natural VQAv2,yes/no,image-insensitive,1,0,val2014/198635,Has the baguette been cut?,yes,no,no,no,no
+Natural VQAv2,yes/no,image-insensitive,1,1,val2014/6484,Has the baguette been cut?,no,no,no,no,no

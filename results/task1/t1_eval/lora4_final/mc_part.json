@@ -1,0 +1,24 @@
+{
+  "mc_seconds": 704.5502253310001,
+  "mc_batch_size": 8,
+  "versions_mc": {
+    "arc_easy": 1.0,
+    "boolq": 2.0,
+    "hellaswag": 1.0
+  },
+  "mc_n": {
+    "hellaswag": 10042,
+    "boolq": 3270,
+    "arc_easy": 2376
+  },
+  "hellaswag_acc": 0.37582154949213303,
+  "hellaswag_acc_stderr": 0.004833444556338864,
+  "hellaswag_acc_norm": 0.474407488548098,
+  "hellaswag_acc_norm_stderr": 0.00498324074410141,
+  "boolq_acc": 0.6633027522935779,
+  "boolq_acc_stderr": 0.008265482725061722,
+  "arc_easy_acc": 0.6557239057239057,
+  "arc_easy_acc_stderr": 0.009749495321590905,
+  "arc_easy_acc_norm": 0.6321548821548821,
+  "arc_easy_acc_norm_stderr": 0.009894923464455033
+}

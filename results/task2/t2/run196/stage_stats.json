@@ -1,0 +1,64 @@
+{
+  "1": {
+    "name": "caption_alignment",
+    "seconds": 2792.50521806199,
+    "dev_eval_seconds": 50.332851668999865,
+    "peak_allocated_gb": 1.663758336,
+    "trainable_params": 1837056,
+    "connector_params": 1837056,
+    "lora_params": 0,
+    "warmup_updates": 113,
+    "mix": {
+      "draws": {},
+      "examples": {
+        "caption": 36000
+      }
+    }
+  },
+  "2": {
+    "name": "visual_instruction",
+    "seconds": 2114.0317656909747,
+    "dev_eval_seconds": 36.636472408999,
+    "peak_allocated_gb": 1.687451648,
+    "trainable_params": 6424576,
+    "connector_params": 1837056,
+    "lora_params": 4587520,
+    "warmup_updates": 75,
+    "mix": {
+      "draws": {
+        "presence": 6068,
+        "counting": 2929,
+        "caption": 3003
+      },
+      "examples": {
+        "presence": 12136,
+        "counting": 5858,
+        "caption": 6006
+      }
+    }
+  },
+  "3": {
+    "name": "natural_vqa",
+    "seconds": 1045.3008355130078,
+    "dev_eval_seconds": 18.393131521001123,
+    "peak_allocated_gb": 1.679163904,
+    "trainable_params": 6424576,
+    "connector_params": 1837056,
+    "lora_params": 4587520,
+    "warmup_updates": 38,
+    "mix": {
+      "draws": {
+        "vqa": 4175,
+        "counting": 624,
+        "presence": 601,
+        "caption": 600
+      },
+      "examples": {
+        "vqa": 8350,
+        "counting": 1248,
+        "presence": 1202,
+        "caption": 1200
+      }
+    }
+  }
+}

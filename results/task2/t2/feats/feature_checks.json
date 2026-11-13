@@ -1,0 +1,32 @@
+[
+  {
+    "status": "OBSERVE",
+    "name": "SigLIP preprocessing (deterministic: fixed resize, no crop, no augmentation)",
+    "expected": null,
+    "actual": "{'class': 'SiglipImageProcessorPil', 'size': SizeDict(height=224, width=224, longest_edge=None, shortest_edge=None, max_height=None, max_width=None), 'resample': 3, 'do_center_crop': None, 'image_mean': (0.5, 0.5, 0.5), 'image_std': (0.5, 0.5, 0.5)}"
+  },
+  {
+    "status": "PASS",
+    "name": "SigLIP output = 196 patch features x 768 numbers",
+    "expected": "(196, 768)",
+    "actual": "(196, 768)"
+  },
+  {
+    "status": "PASS",
+    "name": "last_hidden_state = post_layernorm(encoder output): LayerNorm applied exactly once",
+    "expected": "max difference < 1e-4",
+    "actual": "0.00e+00"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "difference if the LayerNorm were applied a second time (what we avoid)",
+    "expected": null,
+    "actual": "103.400"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "feature caching cost (separate from training)",
+    "expected": null,
+    "actual": "{'n_images': 9276, 'seconds': 220.9602128260001, 'peak_allocated_gb': 1.465531392, 'peak_reserved_gb': 1.696595968, 'bytes': 2792595584}"
+  }
+]

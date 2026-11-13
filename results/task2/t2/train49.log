@@ -1,0 +1,115 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<03:33,  1.45it/s]Loading weights:  50%|████▉     | 154/311 [00:00<00:00, 260.43it/s]Loading weights:  77%|███████▋  | 238/311 [00:00<00:00, 350.09it/s]Loading weights: 100%|██████████| 311/311 [00:01<00:00, 290.56it/s]
+08:03:00 connector scale s = 0.07609 (text 0.8714 / visual 11.4532)
+08:03:00 === stage 1 (caption_alignment): updates 0->2250, trainable params 1,837,056, warm-up 113 ===
+08:03:04 dev @0: caption_dev_loss=4.5599, grounding_dev_nll_correct=6.8479, grounding_dev_nll_complementary=6.7044, grounding_dev_nll_no_image=5.4347, grounding_dev_swap_penalty=-0.1436, grounding_dev_no_image_penalty=-1.4133, vqa_dev_nll_correct=5.7976, vqa_dev_nll_complementary=5.8729, vqa_dev_nll_no_image=5.3696, vqa_dev_swap_penalty=0.0752, vqa_dev_no_image_penalty=-0.4280
+/tmp/pa3_task2_code/task2/t2_train.py:383: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  loss_total += float(nll.sum())
+/tmp/pa3_task2_code/task2/t2_train.py:390: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  sched.step()
+08:03:29 g   50/4500 | stage 1 | loss 3.7691 | lr_c 4.42e-04 | gnorm 8.82 | 0.48s/upd | peak 1.5 GB | draws {}
+08:03:55 g  100/4500 | stage 1 | loss 3.2199 | lr_c 8.85e-04 | gnorm 7.66 | 0.49s/upd | peak 1.6 GB | draws {}
+08:04:20 g  150/4500 | stage 1 | loss 3.0996 | lr_c 9.99e-04 | gnorm 1.33 | 0.49s/upd | peak 1.6 GB | draws {}
+08:04:45 g  200/4500 | stage 1 | loss 3.0049 | lr_c 9.96e-04 | gnorm 0.88 | 0.51s/upd | peak 1.6 GB | draws {}
+08:05:10 g  250/4500 | stage 1 | loss 2.7790 | lr_c 9.91e-04 | gnorm 0.70 | 0.51s/upd | peak 1.6 GB | draws {}
+08:05:36 g  300/4500 | stage 1 | loss 2.8692 | lr_c 9.83e-04 | gnorm 0.70 | 0.53s/upd | peak 1.6 GB | draws {}
+08:06:02 g  350/4500 | stage 1 | loss 2.4897 | lr_c 9.73e-04 | gnorm 0.76 | 0.55s/upd | peak 1.6 GB | draws {}
+08:06:28 g  400/4500 | stage 1 | loss 2.6647 | lr_c 9.61e-04 | gnorm 0.66 | 0.51s/upd | peak 1.6 GB | draws {}
+08:06:53 g  450/4500 | stage 1 | loss 2.6840 | lr_c 9.46e-04 | gnorm 0.79 | 0.50s/upd | peak 1.6 GB | draws {}
+08:07:19 g  500/4500 | stage 1 | loss 2.3907 | lr_c 9.29e-04 | gnorm 0.69 | 0.50s/upd | peak 1.6 GB | draws {}
+08:07:23 dev @500: caption_dev_loss=2.5257, grounding_dev_nll_correct=4.2904, grounding_dev_nll_complementary=4.6456, grounding_dev_nll_no_image=5.4347, grounding_dev_swap_penalty=0.3551, grounding_dev_no_image_penalty=1.1442, vqa_dev_nll_correct=3.8444, vqa_dev_nll_complementary=4.1858, vqa_dev_nll_no_image=5.3696, vqa_dev_swap_penalty=0.3414, vqa_dev_no_image_penalty=1.5253
+08:07:49 g  550/4500 | stage 1 | loss 2.9394 | lr_c 9.11e-04 | gnorm 0.71 | 0.51s/upd | peak 1.6 GB | draws {}
+08:08:15 g  600/4500 | stage 1 | loss 2.3617 | lr_c 8.90e-04 | gnorm 0.73 | 0.50s/upd | peak 1.6 GB | draws {}
+08:08:41 g  650/4500 | stage 1 | loss 2.8296 | lr_c 8.67e-04 | gnorm 0.73 | 0.51s/upd | peak 1.6 GB | draws {}
+08:09:07 g  700/4500 | stage 1 | loss 2.6687 | lr_c 8.43e-04 | gnorm 0.63 | 0.52s/upd | peak 1.6 GB | draws {}
+08:09:33 g  750/4500 | stage 1 | loss 2.4659 | lr_c 8.17e-04 | gnorm 0.72 | 0.52s/upd | peak 1.6 GB | draws {}
+08:10:00 g  800/4500 | stage 1 | loss 2.5386 | lr_c 7.90e-04 | gnorm 0.60 | 0.52s/upd | peak 1.6 GB | draws {}
+08:10:26 g  850/4500 | stage 1 | loss 2.4142 | lr_c 7.61e-04 | gnorm 0.70 | 0.52s/upd | peak 1.6 GB | draws {}
+08:10:53 g  900/4500 | stage 1 | loss 2.5512 | lr_c 7.31e-04 | gnorm 0.68 | 0.54s/upd | peak 1.6 GB | draws {}
+08:11:19 g  950/4500 | stage 1 | loss 2.4098 | lr_c 7.01e-04 | gnorm 0.77 | 0.52s/upd | peak 1.6 GB | draws {}
+08:11:45 g 1000/4500 | stage 1 | loss 2.2645 | lr_c 6.69e-04 | gnorm 0.75 | 0.56s/upd | peak 1.6 GB | draws {}
+08:11:49 dev @1000: caption_dev_loss=2.4014, grounding_dev_nll_correct=4.5655, grounding_dev_nll_complementary=5.2130, grounding_dev_nll_no_image=5.4347, grounding_dev_swap_penalty=0.6475, grounding_dev_no_image_penalty=0.8691, vqa_dev_nll_correct=3.9285, vqa_dev_nll_complementary=4.4297, vqa_dev_nll_no_image=5.3696, vqa_dev_swap_penalty=0.5013, vqa_dev_no_image_penalty=1.4412
+08:12:15 g 1050/4500 | stage 1 | loss 2.3737 | lr_c 6.37e-04 | gnorm 0.62 | 0.52s/upd | peak 1.6 GB | draws {}
+08:12:41 g 1100/4500 | stage 1 | loss 2.0249 | lr_c 6.04e-04 | gnorm 0.58 | 0.52s/upd | peak 1.6 GB | draws {}
+08:13:08 g 1150/4500 | stage 1 | loss 2.3491 | lr_c 5.71e-04 | gnorm 0.68 | 0.54s/upd | peak 1.6 GB | draws {}
+08:13:34 g 1200/4500 | stage 1 | loss 2.3440 | lr_c 5.38e-04 | gnorm 0.62 | 0.51s/upd | peak 1.6 GB | draws {}
+08:14:00 g 1250/4500 | stage 1 | loss 2.4588 | lr_c 5.05e-04 | gnorm 0.72 | 0.54s/upd | peak 1.6 GB | draws {}
+08:14:27 g 1300/4500 | stage 1 | loss 2.4706 | lr_c 4.72e-04 | gnorm 0.86 | 0.51s/upd | peak 1.6 GB | draws {}
+08:14:53 g 1350/4500 | stage 1 | loss 2.3591 | lr_c 4.40e-04 | gnorm 0.78 | 0.54s/upd | peak 1.6 GB | draws {}
+08:15:19 g 1400/4500 | stage 1 | loss 2.4160 | lr_c 4.08e-04 | gnorm 0.68 | 0.55s/upd | peak 1.6 GB | draws {}
+08:15:45 g 1450/4500 | stage 1 | loss 2.0696 | lr_c 3.77e-04 | gnorm 0.72 | 0.51s/upd | peak 1.6 GB | draws {}
+08:16:11 g 1500/4500 | stage 1 | loss 2.6954 | lr_c 3.47e-04 | gnorm 0.91 | 0.52s/upd | peak 1.6 GB | draws {}
+08:16:15 dev @1500: caption_dev_loss=2.3669, grounding_dev_nll_correct=3.6003, grounding_dev_nll_complementary=4.3514, grounding_dev_nll_no_image=5.4347, grounding_dev_swap_penalty=0.7511, grounding_dev_no_image_penalty=1.8344, vqa_dev_nll_correct=3.3029, vqa_dev_nll_complementary=4.0606, vqa_dev_nll_no_image=5.3696, vqa_dev_swap_penalty=0.7578, vqa_dev_no_image_penalty=2.0668
+08:16:41 g 1550/4500 | stage 1 | loss 2.1839 | lr_c 3.18e-04 | gnorm 0.78 | 0.51s/upd | peak 1.6 GB | draws {}
+08:17:07 g 1600/4500 | stage 1 | loss 2.3869 | lr_c 2.90e-04 | gnorm 0.83 | 0.51s/upd | peak 1.6 GB | draws {}
+08:17:33 g 1650/4500 | stage 1 | loss 2.2855 | lr_c 2.64e-04 | gnorm 0.64 | 0.53s/upd | peak 1.6 GB | draws {}
+08:17:59 g 1700/4500 | stage 1 | loss 2.2724 | lr_c 2.39e-04 | gnorm 0.79 | 0.51s/upd | peak 1.6 GB | draws {}
+08:18:25 g 1750/4500 | stage 1 | loss 2.6099 | lr_c 2.16e-04 | gnorm 0.83 | 0.53s/upd | peak 1.6 GB | draws {}
+08:18:51 g 1800/4500 | stage 1 | loss 2.4281 | lr_c 1.95e-04 | gnorm 0.74 | 0.51s/upd | peak 1.6 GB | draws {}
+08:19:17 g 1850/4500 | stage 1 | loss 2.2050 | lr_c 1.76e-04 | gnorm 0.75 | 0.52s/upd | peak 1.6 GB | draws {}
+08:19:43 g 1900/4500 | stage 1 | loss 2.2688 | lr_c 1.58e-04 | gnorm 0.76 | 0.51s/upd | peak 1.6 GB | draws {}
+08:20:09 g 1950/4500 | stage 1 | loss 2.4714 | lr_c 1.43e-04 | gnorm 0.77 | 0.53s/upd | peak 1.6 GB | draws {}
+08:20:35 g 2000/4500 | stage 1 | loss 2.2107 | lr_c 1.30e-04 | gnorm 0.77 | 0.51s/upd | peak 1.6 GB | draws {}
+08:20:39 dev @2000: caption_dev_loss=2.3138, grounding_dev_nll_correct=3.5200, grounding_dev_nll_complementary=4.2521, grounding_dev_nll_no_image=5.4347, grounding_dev_swap_penalty=0.7321, grounding_dev_no_image_penalty=1.9147, vqa_dev_nll_correct=3.1059, vqa_dev_nll_complementary=3.9392, vqa_dev_nll_no_image=5.3696, vqa_dev_swap_penalty=0.8333, vqa_dev_no_image_penalty=2.2637
+08:21:05 g 2050/4500 | stage 1 | loss 2.0586 | lr_c 1.19e-04 | gnorm 0.83 | 0.53s/upd | peak 1.6 GB | draws {}
+08:21:31 g 2100/4500 | stage 1 | loss 2.1873 | lr_c 1.11e-04 | gnorm 0.77 | 0.51s/upd | peak 1.6 GB | draws {}
+08:21:57 g 2150/4500 | stage 1 | loss 2.1500 | lr_c 1.05e-04 | gnorm 0.80 | 0.51s/upd | peak 1.6 GB | draws {}
+08:22:23 g 2200/4500 | stage 1 | loss 2.3248 | lr_c 1.01e-04 | gnorm 0.91 | 0.51s/upd | peak 1.6 GB | draws {}
+08:22:49 g 2250/4500 | stage 1 | loss 2.2350 | lr_c 1.00e-04 | gnorm 0.84 | 0.54s/upd | peak 1.6 GB | draws {}
+08:22:53 dev @2250: caption_dev_loss=2.3052, grounding_dev_nll_correct=3.5898, grounding_dev_nll_complementary=4.3632, grounding_dev_nll_no_image=5.4347, grounding_dev_swap_penalty=0.7734, grounding_dev_no_image_penalty=1.8449, vqa_dev_nll_correct=3.1126, vqa_dev_nll_complementary=3.9185, vqa_dev_nll_no_image=5.3696, vqa_dev_swap_penalty=0.8058, vqa_dev_no_image_penalty=2.2570
+08:22:53   injected 112 adapters (r=16, alpha=32, k=0); adapter params = 4,587,520; initial-A fingerprint 7853833bfd9e69fc
+08:22:53 === stage 2 (visual_instruction): updates 2250->3750, trainable params 6,424,576, warm-up 75 ===
+08:23:31 g 2300/4500 | stage 2 | loss 1.1382 | lr_c 6.67e-05 | gnorm 10.47 | 0.72s/upd | peak 1.5 GB | draws {'presence': 214, 'counting': 99, 'caption': 87}
+08:24:07 g 2350/4500 | stage 2 | loss 0.6241 | lr_c 9.99e-05 | gnorm 2.06 | 0.72s/upd | peak 1.5 GB | draws {'presence': 426, 'counting': 190, 'caption': 184}
+08:24:45 g 2400/4500 | stage 2 | loss 0.4037 | lr_c 9.94e-05 | gnorm 1.90 | 1.01s/upd | peak 1.5 GB | draws {'presence': 626, 'counting': 288, 'caption': 286}
+08:25:22 g 2450/4500 | stage 2 | loss 0.5419 | lr_c 9.83e-05 | gnorm 1.44 | 0.76s/upd | peak 1.5 GB | draws {'presence': 826, 'counting': 394, 'caption': 380}
+08:25:58 g 2500/4500 | stage 2 | loss 1.2482 | lr_c 9.67e-05 | gnorm 3.01 | 0.71s/upd | peak 1.5 GB | draws {'presence': 1023, 'counting': 495, 'caption': 482}
+08:26:03 dev @2500: caption_dev_loss=2.3183, grounding_dev_nll_correct=1.1833, grounding_dev_nll_complementary=3.1266, grounding_dev_nll_no_image=1.7130, grounding_dev_swap_penalty=1.9434, grounding_dev_no_image_penalty=0.5298, vqa_dev_nll_correct=1.9122, vqa_dev_nll_complementary=3.1718, vqa_dev_nll_no_image=2.8387, vqa_dev_swap_penalty=1.2596, vqa_dev_no_image_penalty=0.9265
+08:26:39 g 2550/4500 | stage 2 | loss 0.9734 | lr_c 9.46e-05 | gnorm 4.62 | 0.75s/upd | peak 1.5 GB | draws {'presence': 1222, 'counting': 598, 'caption': 580}
+08:27:17 g 2600/4500 | stage 2 | loss 0.8354 | lr_c 9.20e-05 | gnorm 2.76 | 0.73s/upd | peak 1.5 GB | draws {'presence': 1416, 'counting': 697, 'caption': 687}
+08:27:54 g 2650/4500 | stage 2 | loss 0.6399 | lr_c 8.90e-05 | gnorm 4.58 | 0.71s/upd | peak 1.6 GB | draws {'presence': 1610, 'counting': 792, 'caption': 798}
+08:28:31 g 2700/4500 | stage 2 | loss 0.9646 | lr_c 8.55e-05 | gnorm 3.14 | 0.72s/upd | peak 1.6 GB | draws {'presence': 1812, 'counting': 894, 'caption': 894}
+08:29:08 g 2750/4500 | stage 2 | loss 0.1258 | lr_c 8.17e-05 | gnorm 3.35 | 0.76s/upd | peak 1.6 GB | draws {'presence': 1997, 'counting': 996, 'caption': 1007}
+08:29:45 g 2800/4500 | stage 2 | loss 0.5522 | lr_c 7.76e-05 | gnorm 1.65 | 0.72s/upd | peak 1.6 GB | draws {'presence': 2200, 'counting': 1086, 'caption': 1114}
+08:30:22 g 2850/4500 | stage 2 | loss 0.5024 | lr_c 7.31e-05 | gnorm 7.70 | 0.80s/upd | peak 1.6 GB | draws {'presence': 2407, 'counting': 1187, 'caption': 1206}
+08:30:59 g 2900/4500 | stage 2 | loss 0.8690 | lr_c 6.85e-05 | gnorm 5.88 | 0.75s/upd | peak 1.6 GB | draws {'presence': 2597, 'counting': 1290, 'caption': 1313}
+08:31:36 g 2950/4500 | stage 2 | loss 1.0421 | lr_c 6.37e-05 | gnorm 2.46 | 0.72s/upd | peak 1.6 GB | draws {'presence': 2805, 'counting': 1385, 'caption': 1410}
+08:32:13 g 3000/4500 | stage 2 | loss 0.6455 | lr_c 5.88e-05 | gnorm 3.01 | 0.73s/upd | peak 1.6 GB | draws {'presence': 3011, 'counting': 1495, 'caption': 1494}
+08:32:17 dev @3000: caption_dev_loss=2.2968, grounding_dev_nll_correct=0.9517, grounding_dev_nll_complementary=3.5106, grounding_dev_nll_no_image=1.4849, grounding_dev_swap_penalty=2.5589, grounding_dev_no_image_penalty=0.5332, vqa_dev_nll_correct=1.5601, vqa_dev_nll_complementary=3.1600, vqa_dev_nll_no_image=2.6475, vqa_dev_swap_penalty=1.5998, vqa_dev_no_image_penalty=1.0874
+08:32:54 g 3050/4500 | stage 2 | loss 0.3952 | lr_c 5.38e-05 | gnorm 3.54 | 0.71s/upd | peak 1.6 GB | draws {'presence': 3209, 'counting': 1592, 'caption': 1599}
+08:33:31 g 3100/4500 | stage 2 | loss 0.0746 | lr_c 4.89e-05 | gnorm 3.13 | 0.71s/upd | peak 1.6 GB | draws {'presence': 3410, 'counting': 1704, 'caption': 1686}
+08:34:08 g 3150/4500 | stage 2 | loss 0.2973 | lr_c 4.40e-05 | gnorm 5.28 | 0.72s/upd | peak 1.6 GB | draws {'presence': 3631, 'counting': 1790, 'caption': 1779}
+08:34:45 g 3200/4500 | stage 2 | loss 0.7529 | lr_c 3.93e-05 | gnorm 2.95 | 0.72s/upd | peak 1.6 GB | draws {'presence': 3814, 'counting': 1895, 'caption': 1891}
+08:35:22 g 3250/4500 | stage 2 | loss 0.2764 | lr_c 3.47e-05 | gnorm 2.07 | 0.78s/upd | peak 1.6 GB | draws {'presence': 4019, 'counting': 1990, 'caption': 1991}
+08:35:59 g 3300/4500 | stage 2 | loss 0.2518 | lr_c 3.04e-05 | gnorm 3.62 | 0.73s/upd | peak 1.6 GB | draws {'presence': 4223, 'counting': 2086, 'caption': 2091}
+08:36:36 g 3350/4500 | stage 2 | loss 1.0286 | lr_c 2.64e-05 | gnorm 5.58 | 0.73s/upd | peak 1.6 GB | draws {'presence': 4405, 'counting': 2201, 'caption': 2194}
+08:37:13 g 3400/4500 | stage 2 | loss 0.1868 | lr_c 2.28e-05 | gnorm 2.12 | 0.76s/upd | peak 1.6 GB | draws {'presence': 4617, 'counting': 2291, 'caption': 2292}
+08:37:50 g 3450/4500 | stage 2 | loss 0.2770 | lr_c 1.95e-05 | gnorm 1.95 | 0.73s/upd | peak 1.6 GB | draws {'presence': 4827, 'counting': 2379, 'caption': 2394}
+08:38:27 g 3500/4500 | stage 2 | loss 0.2443 | lr_c 1.67e-05 | gnorm 1.64 | 0.71s/upd | peak 1.6 GB | draws {'presence': 5035, 'counting': 2478, 'caption': 2487}
+08:38:31 dev @3500: caption_dev_loss=2.2788, grounding_dev_nll_correct=1.1557, grounding_dev_nll_complementary=3.8767, grounding_dev_nll_no_image=1.4823, grounding_dev_swap_penalty=2.7210, grounding_dev_no_image_penalty=0.3266, vqa_dev_nll_correct=1.7359, vqa_dev_nll_complementary=3.3597, vqa_dev_nll_no_image=2.7669, vqa_dev_swap_penalty=1.6237, vqa_dev_no_image_penalty=1.0309
+08:39:08 g 3550/4500 | stage 2 | loss 0.3580 | lr_c 1.43e-05 | gnorm 4.92 | 0.74s/upd | peak 1.6 GB | draws {'presence': 5265, 'counting': 2552, 'caption': 2583}
+08:39:45 g 3600/4500 | stage 2 | loss 0.6137 | lr_c 1.24e-05 | gnorm 4.01 | 0.71s/upd | peak 1.6 GB | draws {'presence': 5457, 'counting': 2643, 'caption': 2700}
+08:40:22 g 3650/4500 | stage 2 | loss 0.0418 | lr_c 1.11e-05 | gnorm 4.27 | 0.76s/upd | peak 1.6 GB | draws {'presence': 5665, 'counting': 2738, 'caption': 2797}
+08:40:59 g 3700/4500 | stage 2 | loss 0.2838 | lr_c 1.03e-05 | gnorm 0.95 | 0.75s/upd | peak 1.6 GB | draws {'presence': 5861, 'counting': 2834, 'caption': 2905}
+08:41:36 g 3750/4500 | stage 2 | loss 1.2903 | lr_c 1.00e-05 | gnorm 2.77 | 0.73s/upd | peak 1.6 GB | draws {'presence': 6068, 'counting': 2929, 'caption': 3003}
+08:41:40 dev @3750: caption_dev_loss=2.2749, grounding_dev_nll_correct=1.2610, grounding_dev_nll_complementary=4.2792, grounding_dev_nll_no_image=1.5157, grounding_dev_swap_penalty=3.0182, grounding_dev_no_image_penalty=0.2547, vqa_dev_nll_correct=1.7422, vqa_dev_nll_complementary=3.4368, vqa_dev_nll_no_image=2.7532, vqa_dev_swap_penalty=1.6946, vqa_dev_no_image_penalty=1.0109
+08:41:41 === stage 3 (natural_vqa): updates 3750->4500, trainable params 6,424,576, warm-up 38 ===
+08:42:17 g 3800/4500 | stage 3 | loss 1.3025 | lr_c 5.00e-05 | gnorm 6.46 | 0.71s/upd | peak 1.5 GB | draws {'vqa': 282, 'counting': 42, 'presence': 32, 'caption': 44}
+08:42:53 g 3850/4500 | stage 3 | loss 0.3688 | lr_c 4.92e-05 | gnorm 3.36 | 0.71s/upd | peak 1.5 GB | draws {'vqa': 564, 'counting': 84, 'presence': 73, 'caption': 79}
+08:43:30 g 3900/4500 | stage 3 | loss 0.2600 | lr_c 4.73e-05 | gnorm 4.66 | 0.71s/upd | peak 1.5 GB | draws {'vqa': 833, 'counting': 127, 'presence': 114, 'caption': 126}
+08:44:06 g 3950/4500 | stage 3 | loss 0.9340 | lr_c 4.45e-05 | gnorm 6.61 | 0.71s/upd | peak 1.5 GB | draws {'vqa': 1113, 'counting': 161, 'presence': 160, 'caption': 166}
+08:44:43 g 4000/4500 | stage 3 | loss 0.7428 | lr_c 4.09e-05 | gnorm 5.67 | 0.71s/upd | peak 1.5 GB | draws {'vqa': 1386, 'counting': 209, 'presence': 198, 'caption': 207}
+08:44:47 dev @4000: caption_dev_loss=2.2736, grounding_dev_nll_correct=0.8911, grounding_dev_nll_complementary=2.5395, grounding_dev_nll_no_image=1.2006, grounding_dev_swap_penalty=1.6484, grounding_dev_no_image_penalty=0.3095, vqa_dev_nll_correct=1.0611, vqa_dev_nll_complementary=2.3518, vqa_dev_nll_no_image=1.9328, vqa_dev_swap_penalty=1.2907, vqa_dev_no_image_penalty=0.8717
+08:45:24 g 4050/4500 | stage 3 | loss 0.6778 | lr_c 3.66e-05 | gnorm 5.54 | 0.72s/upd | peak 1.5 GB | draws {'vqa': 1662, 'counting': 248, 'presence': 242, 'caption': 248}
+08:46:01 g 4100/4500 | stage 3 | loss 0.6923 | lr_c 3.19e-05 | gnorm 2.26 | 0.73s/upd | peak 1.5 GB | draws {'vqa': 1951, 'counting': 283, 'presence': 285, 'caption': 281}
+08:46:37 g 4150/4500 | stage 3 | loss 0.8573 | lr_c 2.70e-05 | gnorm 5.84 | 0.72s/upd | peak 1.5 GB | draws {'vqa': 2219, 'counting': 331, 'presence': 329, 'caption': 321}
+08:47:14 g 4200/4500 | stage 3 | loss 0.4498 | lr_c 2.20e-05 | gnorm 5.25 | 0.73s/upd | peak 1.5 GB | draws {'vqa': 2513, 'counting': 371, 'presence': 364, 'caption': 352}
+08:47:51 g 4250/4500 | stage 3 | loss 0.6252 | lr_c 1.74e-05 | gnorm 4.62 | 0.72s/upd | peak 1.5 GB | draws {'vqa': 2788, 'counting': 412, 'presence': 403, 'caption': 397}
+08:48:28 g 4300/4500 | stage 3 | loss 0.8598 | lr_c 1.32e-05 | gnorm 4.87 | 0.73s/upd | peak 1.5 GB | draws {'vqa': 3066, 'counting': 457, 'presence': 436, 'caption': 441}
+08:49:05 g 4350/4500 | stage 3 | loss 0.4302 | lr_c 9.76e-06 | gnorm 3.50 | 0.72s/upd | peak 1.5 GB | draws {'vqa': 3343, 'counting': 510, 'presence': 475, 'caption': 472}
+08:49:42 g 4400/4500 | stage 3 | loss 0.8809 | lr_c 7.16e-06 | gnorm 4.00 | 0.77s/upd | peak 1.5 GB | draws {'vqa': 3627, 'counting': 543, 'presence': 518, 'caption': 512}
+08:50:19 g 4450/4500 | stage 3 | loss 0.8473 | lr_c 5.55e-06 | gnorm 3.39 | 0.73s/upd | peak 1.5 GB | draws {'vqa': 3911, 'counting': 573, 'presence': 564, 'caption': 552}
+08:50:55 g 4500/4500 | stage 3 | loss 0.8006 | lr_c 5.00e-06 | gnorm 3.78 | 0.72s/upd | peak 1.5 GB | draws {'vqa': 4175, 'counting': 624, 'presence': 601, 'caption': 600}
+08:51:00 dev @4500: caption_dev_loss=2.2846, grounding_dev_nll_correct=0.9915, grounding_dev_nll_complementary=3.2171, grounding_dev_nll_no_image=1.2193, grounding_dev_swap_penalty=2.2256, grounding_dev_no_image_penalty=0.2278, vqa_dev_nll_correct=1.0874, vqa_dev_nll_complementary=2.5823, vqa_dev_nll_no_image=1.9174, vqa_dev_swap_penalty=1.4950, vqa_dev_no_image_penalty=0.8300
+08:51:00 training finished

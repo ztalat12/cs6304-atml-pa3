@@ -1,0 +1,8 @@
+Suite,Type,Questions,unchanged,changed to the partner image's answer,changed to another answer
+Annotation-derived,all,128,14.0625,59.375,26.5625
+Annotation-derived,presence,64,15.625,81.25,3.125
+Annotation-derived,counting,64,12.5,37.5,50.0
+Natural VQAv2,all,192,45.833333333333336,34.375,19.791666666666668
+Natural VQAv2,yes/no,72,61.111111111111114,38.888888888888886,0.0
+Natural VQAv2,number,48,45.833333333333336,20.833333333333332,33.333333333333336
+Natural VQAv2,other,72,30.555555555555557,38.888888888888886,30.555555555555557

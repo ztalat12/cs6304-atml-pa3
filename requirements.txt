@@ -1,0 +1,17 @@
+# Kaggle's default GPU image provides torch / numpy / pandas / scipy / matplotlib / pyarrow; the notebooks install
+# lm-eval (Task 1) and math-verify (Task 3).
+torch>=2.3
+transformers>=4.51
+datasets
+accelerate
+safetensors
+lm-eval==0.4.13
+numpy
+pandas
+scipy
+matplotlib
+openpyxl
+pyyaml
+pyarrow
+math-verify==0.9.0
+huggingface_hub

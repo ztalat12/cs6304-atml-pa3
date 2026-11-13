@@ -1,0 +1,15 @@
+Suite,Type,Pairs,Quantity,196 tokens,49 tokens,196 − 49 (pp),95% CI low,95% CI high,CI excludes 0
+Annotation-derived,all,64,correct-image accuracy,64.84375,67.1875,-2.34375,-8.59375,3.90625,False
+Annotation-derived,all,64,accuracy advantage over the swap,52.34375,56.25,-3.90625,-14.0625,5.46875,False
+Annotation-derived,counting,32,correct-image accuracy,40.625,43.75,-3.125,-14.0625,7.8125,False
+Annotation-derived,counting,32,accuracy advantage over the swap,26.5625,31.25,-4.6875,-18.75,9.375,False
+Annotation-derived,presence,32,correct-image accuracy,89.0625,90.625,-1.5625,-7.851562499999987,4.6875,False
+Annotation-derived,presence,32,accuracy advantage over the swap,78.125,81.25,-3.125,-15.703124999999973,9.375,False
+Natural VQAv2,all,96,correct-image accuracy,57.604166666666664,49.010416666666664,8.59375,3.177083333333333,14.325520833333341,True
+Natural VQAv2,all,96,accuracy advantage over the swap,33.229166666666664,21.197916666666668,12.03125,3.541666666666666,20.989583333333332,True
+Natural VQAv2,number,24,correct-image accuracy,38.958333333333336,31.45833333333333,7.5,-1.463541666666666,16.666666666666664,False
+Natural VQAv2,number,24,accuracy advantage over the swap,20.0,4.583333333333333,15.416666666666664,2.4999999999999996,30.0,True
+Natural VQAv2,other,36,correct-image accuracy,53.6111111111111,41.94444444444444,11.666666666666666,1.5277777777777772,22.083333333333332,True
+Natural VQAv2,other,36,accuracy advantage over the swap,38.47222222222222,25.83333333333333,12.638888888888891,-1.666666666666667,26.944444444444443,False
+Natural VQAv2,yes/no,36,correct-image accuracy,74.02777777777779,67.77777777777777,6.25,-2.4999999999999996,14.86111111111111,False
+Natural VQAv2,yes/no,36,accuracy advantage over the swap,36.80555555555556,27.638888888888886,9.166666666666666,-7.090277777777776,25.416666666666664,False

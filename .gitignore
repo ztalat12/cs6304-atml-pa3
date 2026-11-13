@@ -1,0 +1,7 @@
+__pycache__/
+# model weights and checkpoints are never committed
+*.pt
+*.safetensors
+# per-token arrays copied from the supplied Task 3 data (reproducible from it)
+mathvista_tokens.npz
+hf_cache/

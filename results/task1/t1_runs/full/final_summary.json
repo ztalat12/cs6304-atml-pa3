@@ -1,0 +1,17 @@
+{
+  "method": "full",
+  "trainable_params": 596049920,
+  "total_params": 596049920,
+  "train_seconds_measured": 8207.763583041014,
+  "wall_seconds_this_session": 8320.211505145999,
+  "skipped_updates": 0,
+  "updates": 1250,
+  "peak_allocated_gb": 12.557283328,
+  "peak_reserved_gb": 14.227079168,
+  "overhead": {
+    "model_load_seconds": 3.357714979999969,
+    "theta0_bf16_exact": true
+  },
+  "recovery_checkpoint_bytes": 7775320313,
+  "export_final_bytes": 1203563927
+}

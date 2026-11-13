@@ -1,0 +1,26 @@
+[
+  {
+    "status": "PASS",
+    "name": "every live question has all five calls",
+    "expected": "50",
+    "actual": "50"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "live: strategies (50 MATH questions)",
+    "expected": null,
+    "actual": "[{'strategy': 'single longer response (3,072)', 'accuracy': 0.64, 'questions': 50, 'mean input tokens': 108.38, 'mean output tokens': 642.26, 'unused output allowance (tokens)': 2429.74, 'total runtime (min)': 26.064, 'mean runtime per question (s)': 31.276, 'truncated calls (%)': 0.0, 'calls without an extracted answer (%)': 0.0, 'final answer missing (%)': 0.0, 'peak GPU memory (GB)': 6.532}, {'strategy': 'parallel x3 (1,024) + self-consistency', 'accuracy': 0.68, 'questions': 50, 'mean input tokens': 325.14, 'mean output tokens': 1843.1, 'unused output allowance (tokens)': 1228.9, 'total runtime (min)': 74.3, 'mean runtime per question (s)': 89.161, 'truncated calls (%)': 18.0, 'calls without an extracted answer (%)': 16.0, 'final answer missing (%)': 16.0, 'peak GPU memory (GB)': 6.376}, {'strategy': 'initial (1,024) + critique-and-revision (2,048)', 'accuracy': 0.66, 'questions': 50, 'mean input tokens': 859.14, 'mean output tokens': 1207.68, 'unused output allowance (tokens)': 1864.32, 'total runtime (min)': 49.798, 'mean runtime per question (s)': 59.758, 'truncated calls (%)': 8.0, 'calls without an extracted answer (%)': 8.0, 'final answer missing (%)': 4.0, 'peak GPU memory (GB)': 6.63}]"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "live: revision transitions relative to the shared initial answer",
+    "expected": null,
+    "actual": "{'wrong -> correct': 1, 'correct -> wrong': 0, 'correct -> correct': 32, 'wrong -> wrong': 17, 'revision changed the answer group': 5, 'initial response truncated': 6, 'revision truncated': 2, 'mean revision prompt tokens': 750.76}"
+  },
+  {
+    "status": "OBSERVE",
+    "name": "live: paired bootstrap accuracy differences (pp)",
+    "expected": null,
+    "actual": "[{'comparison': 'parallel - single', 'diff_pp': 4.0, 'ci_low_pp': -6.0, 'ci_high_pp': 16.0}, {'comparison': 'revised - single', 'diff_pp': 2.0, 'ci_low_pp': -8.0, 'ci_high_pp': 14.0}, {'comparison': 'revised - parallel', 'diff_pp': -2.0, 'ci_low_pp': -10.0, 'ci_high_pp': 4.0}, {'comparison': 'revised - initial', 'diff_pp': 2.0, 'ci_low_pp': 0.0, 'ci_high_pp': 6.0}]"
+  }
+]

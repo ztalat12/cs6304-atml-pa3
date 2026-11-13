@@ -1,0 +1,22 @@
+{
+  "method": "oplora",
+  "trainable_params": 10092544,
+  "total_params": 606142464,
+  "train_seconds_measured": 12106.27602399203,
+  "wall_seconds_this_session": 12108.636211211,
+  "skipped_updates": 0,
+  "updates": 1250,
+  "peak_allocated_gb": 3.821868032,
+  "peak_reserved_gb": 6.859784192,
+  "overhead": {
+    "adapter_injection_seconds": 32.85077838799998,
+    "basis_svd_seconds": 32.68350029199917,
+    "basis_storage_bytes": 322961408,
+    "model_load_seconds": 35.357977767999955,
+    "export_seconds": 0.17438226499871234
+  },
+  "recovery_checkpoint_bytes": 121587101,
+  "adapter_bytes_fp32": 40496315,
+  "oplora_worst_rel_UkT_dW": 1.0114393266499867e-07,
+  "oplora_worst_rel_dW_Vk": 1.1880244499255992e-07
+}

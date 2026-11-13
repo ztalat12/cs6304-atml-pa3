@@ -1,0 +1,4 @@
+score,"top - bottom quartile correct rate, all questions (pp)","top - bottom quartile correct rate, mixed questions (pp)","Spearman with correctness, mixed questions (mean)",Spearman with length (mean),mixed questions
+length T,-4.545612373737374,-7.753709805948612,-0.0763259505439682,,469
+mean log-prob L,7.828125,13.352878464818762,0.1340118195382063,0.2245099022004807,469
+self-certainty K,11.984375,20.442430703624733,0.1980410864928511,-0.1610959581729373,469

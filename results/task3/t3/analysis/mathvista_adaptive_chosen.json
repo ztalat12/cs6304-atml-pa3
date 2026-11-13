@@ -1,0 +1,19 @@
+{
+  "quality_score": "VisConf",
+  "agreement": {
+    "tau": 0.5,
+    "gamma": null,
+    "dev_accuracy": 0.636,
+    "dev_mean_cost": 3807.4829999999997,
+    "dev_fixed32_accuracy": 0.6425,
+    "dev_fixed32_cost": 9217.485
+  },
+  "quality": {
+    "tau": 0.5,
+    "gamma": 0.0,
+    "dev_accuracy": 0.6395000000000001,
+    "dev_mean_cost": 4199.0595,
+    "dev_fixed32_accuracy": 0.6425,
+    "dev_fixed32_cost": 9217.485
+  }
+}

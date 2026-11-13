@@ -1,0 +1,23 @@
+{
+  "method": "l2sp",
+  "trainable_params": 596049920,
+  "total_params": 596049920,
+  "train_seconds_measured": 8560.287765738973,
+  "wall_seconds_this_session": 8671.558421579999,
+  "skipped_updates": 0,
+  "updates": 1250,
+  "peak_allocated_gb": 12.55421952,
+  "peak_reserved_gb": 14.677966848,
+  "overhead": {
+    "model_load_seconds": 2.678245593000611,
+    "theta0_bf16_exact": true,
+    "reference_storage": "cpu_bf16",
+    "reference_storage_bytes": 1192099840,
+    "reference_setup_seconds": 1.1637557719986944,
+    "reference_device": "cpu",
+    "reference_transfer_seconds_per_update": 0.09818270499999926
+  },
+  "penalty_seconds": 369.6209382449888,
+  "recovery_checkpoint_bytes": 7775320313,
+  "export_final_bytes": 1203563927
+}
